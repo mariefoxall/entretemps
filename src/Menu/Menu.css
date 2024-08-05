@@ -1,6 +1,7 @@
 .nav-menu {
   position: relative;
   cursor: pointer;
+  padding: 0.6em;
 }
 
 .nav-menu-links {
