@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import "./Home.css";
 import { makeTextWavy } from "../animations";
+import { Link } from "react-router-dom";
 
 function Home() {
   const animated = useRef(null);
@@ -14,7 +15,9 @@ function Home() {
   return (
     <>
       <div className="home-section">
-        <h1 className="home-heading" ref={animated}></h1>
+        <Link to="/exhibitions">
+          <h1 className="home-heading" ref={animated}></h1>
+        </Link>{" "}
         <p className="studio-gallery">studio / gallery</p>
       </div>
     </>
