@@ -3,7 +3,7 @@ import lamp from "../assets/portal-lamp-cropped.jpg";
 import lampAndMaze from "../assets/chainmail-lamp-bead-maze.jpg";
 import overall from "../assets/overall.jpg";
 import chair from "../assets/tall-chair.jpg";
-import doggyPoster from "../assets/yo-doggy-poster.jpg";
+import doggyPoster from "../assets/yo-doggy-poster.png";
 // import lamp from "../assets/entretemps-lamp.jpg";
 // import key from "../assets/entretemps-key.jpg";
 // import beadMaze from "../assets/bead-maze-close.jpg";
