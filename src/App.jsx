@@ -4,7 +4,7 @@ import Menu from "./Menu/Menu";
 import Exhibitions from "./Exhibitions/Exhibitions";
 import Contact from "./Contact/Contact";
 import Visit from "./Visit/Visit";
-import Shop from "./Shop/Shop";
+// import Shop from "./Shop/Shop";
 import Home from "./Home/Home";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function App() {
@@ -23,7 +23,7 @@ function App() {
         <Route path="/exhibitions" element={<Exhibitions />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/visit" element={<Visit />} />
-        <Route path="/shop" element={<Shop />} />
+        {/* <Route path="/shop" element={<Shop />} /> */}
       </Routes>
     </Router>
   );

@@ -8,6 +8,7 @@ import doggyPoster from "../assets/yo-doggy-poster.png";
 // import key from "../assets/entretemps-key.jpg";
 // import beadMaze from "../assets/bead-maze-close.jpg";
 import ceramicCorner from "../assets/ceram-corner.jpg";
+import waitingPoster from "../assets/english_purgatory.jpg";
 import "./Exhibitions.css";
 
 function Exhibitions() {
@@ -27,7 +28,11 @@ function Exhibitions() {
         <h2>Previous Exhibitions:</h2>
         <h3>Purgatory is a Waiting Room</h3>
         <p>by Etty Anderson & Marie Foxall</p>
-
+        <img
+          className="gallery-image-vert"
+          src={waitingPoster}
+          alt="Poster for previous exhibition Purgatory is a Waiting Room"
+        />{" "}
         <img
           className="gallery-image"
           src={overall}
