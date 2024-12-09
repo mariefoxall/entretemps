@@ -7,6 +7,7 @@ import doggyPoster from "../assets/yo-doggy-poster.png";
 import dogAndKong from "../assets/dog-kong.jpg";
 import captive from "../assets/captive-collar-stand.jpg";
 import overallYoDoggy from "../assets/yo-doggy-right-side.jpg";
+import bestInShow from "../assets/best-in-show.jpg";
 // import lamp from "../assets/entretemps-lamp.jpg";
 // import key from "../assets/entretemps-key.jpg";
 // import beadMaze from "../assets/bead-maze-close.jpg";
@@ -40,6 +41,11 @@ function Exhibitions() {
           className="gallery-image-vert"
           src={captive}
           alt="Bronze and suede ornate dog collar on a brass and wooden stand"
+        />
+        <img
+          className="gallery-image"
+          src={bestInShow}
+          alt="Trophy and cups with carved poodles"
         />
       </div>{" "}
       <div className="exhibition-section">
