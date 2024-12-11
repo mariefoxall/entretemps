@@ -7,7 +7,9 @@ import doggyPoster from "../assets/yo-doggy-poster.png";
 import dogAndKong from "../assets/dog-kong.jpg";
 import captive from "../assets/captive-collar-stand.jpg";
 import overallYoDoggy from "../assets/yo-doggy-right-side.jpg";
-import bestInShow from "../assets/best-in-show.jpg";
+import bestInShowCups from "../assets/best-in-show-cups.jpg";
+import bestInShowTrophy from "../assets/best-in-show-trophy.jpg";
+import woofWoofNight from "../assets/woof-woof-night.jpg";
 // import lamp from "../assets/entretemps-lamp.jpg";
 // import key from "../assets/entretemps-key.jpg";
 // import beadMaze from "../assets/bead-maze-close.jpg";
@@ -44,8 +46,18 @@ function Exhibitions() {
         />
         <img
           className="gallery-image"
-          src={bestInShow}
-          alt="Trophy and cups with carved poodles"
+          src={woofWoofNight}
+          alt="Ceramic double leash & collar in a gallery window at night"
+        />
+        <img
+          className="gallery-image-vert"
+          src={bestInShowTrophy}
+          alt="Ceramic trophy with carved ceramic poodle figurine on top"
+        />
+        <img
+          className="gallery-image-vert"
+          src={bestInShowCups}
+          alt="Ceramic goblets with carved poodle head base"
         />
       </div>{" "}
       <div className="exhibition-section">
