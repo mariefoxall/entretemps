@@ -20,8 +20,9 @@ import "./Exhibitions.css";
 function Exhibitions() {
   return (
     <div className="exhibitions-page">
+      <h2>Previous Exhibitions:</h2>
       <div className="exhibition-section">
-        <h2>Current Exhibition:</h2>
+        {/* <h2>Current Exhibition:</h2> */}
         <h3>YO DOGGY!</h3>
 
         <img
@@ -61,7 +62,6 @@ function Exhibitions() {
         />
       </div>{" "}
       <div className="exhibition-section">
-        <h2>Previous Exhibitions:</h2>
         <h3>Purgatory is a Waiting Room</h3>
         <p>by Etty Anderson & Marie Foxall</p>
         <img
