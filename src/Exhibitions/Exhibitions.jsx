@@ -24,6 +24,7 @@ function Exhibitions() {
       <h2>Upcoming Exhibition:</h2>
       <div className="exhibition-section">
         <h3>PRINCESSE & COWBOY</h3>
+        <p>Loup Gauvin-Dufresne & Laurence Savard-Gagnon</p>
       </div>
       <img
         className="gallery-image-vert"
@@ -72,7 +73,7 @@ function Exhibitions() {
       </div>{" "}
       <div className="exhibition-section">
         <h3>Purgatory is a Waiting Room</h3>
-        <p>by Etty Anderson & Marie Foxall</p>
+        <p>Etty Anderson & Marie Foxall</p>
         <img
           className="gallery-image-vert"
           src={waitingPoster}
