@@ -15,20 +15,29 @@ import woofWoofNight from "../assets/woof-woof-night.jpg";
 // import beadMaze from "../assets/bead-maze-close.jpg";
 import ceramicCorner from "../assets/ceram-corner.jpg";
 import waitingPoster from "../assets/english_purgatory.jpg";
+import princesseCowboy from "../assets/princesse-et-cowboy.jpg";
 import "./Exhibitions.css";
 
 function Exhibitions() {
   return (
     <div className="exhibitions-page">
+      <h2>Upcoming Exhibition:</h2>
+      <div className="exhibition-section">
+        <h3>PRINCESSE & COWBOY</h3>
+      </div>
+      <img
+        className="gallery-image-vert"
+        src={princesseCowboy}
+        alt="Poster for upcoming exhibition Princesse et Cowboy"
+      />
       <h2>Previous Exhibitions:</h2>
       <div className="exhibition-section">
-        {/* <h2>Current Exhibition:</h2> */}
         <h3>YO DOGGY!</h3>
 
         <img
           className="gallery-image-vert"
           src={doggyPoster}
-          alt="Poster for upcoming exhibition YO DOGGY!"
+          alt="Poster for previous exhibition YO DOGGY!"
         />
         <img
           className="gallery-image"
