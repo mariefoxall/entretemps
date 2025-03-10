@@ -46,14 +46,14 @@ export default function Contact() {
         <br />- Sketches of a work you're proposing with supporting images of
         your previous work
       </p>
-      <h3>Do you have a burning question?</h3>
+      {/* <h3>Do you have a burning question?</h3>
       <h3>Want to submit your work for consideration?</h3>
       <p className="email-address">
         Give us a shout at{" "}
         <a className="email-link" href="mailto:bonjour.hi@entretemps.ca">
           bonjour.hi@entretemps.ca
         </a>
-      </p>
+      </p> */}
     </div>
   );
 }
