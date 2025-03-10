@@ -6,7 +6,7 @@
 
 .nav-menu-links {
   position: absolute;
-  top: 0;
+  top: 8px;
   right: 0;
   display: grid;
   grid-template-columns: max-content;

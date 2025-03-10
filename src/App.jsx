@@ -7,6 +7,9 @@ import Visit from "./Visit/Visit";
 // import Shop from "./Shop/Shop";
 import Home from "./Home/Home";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Purgatory from "./Exhibitions/Purgatory";
+import YoDoggy from "./Exhibitions/Doggy";
+import PrincesseEtCowboy from "./Exhibitions/PrincesseCowboy";
 function App() {
   return (
     <Router>
@@ -21,6 +24,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/exhibitions" element={<Exhibitions />} />
+        <Route
+          path="/exhibitions/purgatory-is-a-waiting-room"
+          element={<Purgatory />}
+        />
+        <Route path="/exhibitions/yo-doggy" element={<YoDoggy />} />
+        <Route
+          path="/exhibitions/princesse-et-cowboy"
+          element={<PrincesseEtCowboy />}
+        />
         <Route path="/contact" element={<Contact />} />
         <Route path="/visit" element={<Visit />} />
         {/* <Route path="/shop" element={<Shop />} /> */}

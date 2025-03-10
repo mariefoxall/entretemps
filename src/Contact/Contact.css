@@ -94,3 +94,13 @@ textarea {
 .contact-page {
   padding: 2rem;
 }
+
+.spacing {
+  margin: 16px 0;
+}
+
+.highlight {
+  background-color: rgb(244, 149, 133);
+  padding: 16px;
+  width: fit-content;
+}
