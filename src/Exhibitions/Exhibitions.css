@@ -11,3 +11,12 @@
 .exhibitions-page {
   padding: 2rem;
 }
+
+.exhibition-header {
+  margin: 20px 0;
+}
+
+.upcoming,
+.previous {
+  margin: 30px 0;
+}
