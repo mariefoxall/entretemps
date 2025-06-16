@@ -17,6 +17,6 @@
 }
 
 .upcoming,
-.previous {
+.previous .current {
   margin: 30px 0;
 }

@@ -12,8 +12,8 @@ import "./Exhibitions.css";
 function Exhibitions() {
   return (
     <div className="exhibitions-page">
-      <div className="upcoming">
-        <h2>Upcoming Exhibitions:</h2>
+      <div className="current">
+        <h2>Current Exhibition:</h2>
         <div className="exhibition-section">
           <div className="exhibition-header">
             <h3>BLUEPRINTS OF BELONGING</h3>
@@ -25,6 +25,10 @@ function Exhibitions() {
             alt="Blueprints of Belonging photo exhibition poster"
           />{" "}
         </div>
+      </div>
+      <div className="upcoming">
+        <h2>Upcoming Exhibitions:</h2>
+
         <div className="exhibition-section">
           <div className="exhibition-header">
             <h3>MON DÉPANNEUR</h3>{" "}
