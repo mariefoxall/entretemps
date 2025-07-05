@@ -5,7 +5,7 @@ import waitingPoster from "../assets/english_purgatory.jpg";
 // import key from "../assets/entretemps-key.jpg";
 // import beadMaze from "../assets/bead-maze-close.jpg";
 import princesseCowboy from "../assets/princesse-et-cowboy.jpg";
-import monDepOpenCall from "../assets/mon-depanneur-open-call-eng.jpg";
+import monDepPoster from "../assets/dep-poster-letter-web.jpg";
 import BPOB from "../assets/BlueprintsOfBelongingPoster.jpg";
 import "./Exhibitions.css";
 
@@ -14,6 +14,23 @@ function Exhibitions() {
     <div className="exhibitions-page">
       <div className="current">
         <h2>Current Exhibition:</h2>
+      </div>
+      <div className="upcoming">
+        <h2>Upcoming Exhibitions:</h2>
+
+        <div className="exhibition-section">
+          <div className="exhibition-header">
+            <h3>MON DÉPANNEUR</h3>{" "}
+          </div>
+          <img
+            className="gallery-image-vert"
+            src={monDepPoster}
+            alt="Poster group art show exhibition Mon Dépanneur"
+          />{" "}
+        </div>
+      </div>
+      <div className="previous">
+        <h2>Previous Exhibitions:</h2>
         <div className="exhibition-section">
           <div className="exhibition-header">
             <h3>BLUEPRINTS OF BELONGING</h3>
@@ -25,23 +42,6 @@ function Exhibitions() {
             alt="Blueprints of Belonging photo exhibition poster"
           />{" "}
         </div>
-      </div>
-      <div className="upcoming">
-        <h2>Upcoming Exhibitions:</h2>
-
-        <div className="exhibition-section">
-          <div className="exhibition-header">
-            <h3>MON DÉPANNEUR</h3>{" "}
-          </div>
-          <img
-            className="gallery-image-vert"
-            src={monDepOpenCall}
-            alt="Poster calling for submissions for upcoming exhibition Mon Dépanneur"
-          />{" "}
-        </div>
-      </div>
-      <div className="previous">
-        <h2>Previous Exhibitions:</h2>
         <div className="exhibition-section">
           {" "}
           <div className="exhibition-header">
