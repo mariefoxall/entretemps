@@ -12,8 +12,11 @@ function Visit() {
       </div>
       <div className="visit-section">
         <h3>Opening hours:</h3>
-        <p>- from time to time</p>
-        <p>- by appointment</p>
+
+        <br />
+        <p>Saturdays & Sundays: 12pm - 5pm</p>
+        {/* <p>- from time to time</p> */}
+        <p>Weekdays: by appointment</p>
       </div>
       <Booking />
     </div>
