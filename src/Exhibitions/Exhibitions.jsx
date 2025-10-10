@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import doggyPoster from "../assets/yo-doggy-poster.png";
 import waitingPoster from "../assets/english_purgatory.jpg";
+import calissePoster from "../assets/calisse-de-goblet-poster-square.png";
 // import lamp from "../assets/entretemps-lamp.jpg";
 // import key from "../assets/entretemps-key.jpg";
 // import beadMaze from "../assets/bead-maze-close.jpg";
@@ -12,8 +13,25 @@ import "./Exhibitions.css";
 function Exhibitions() {
   return (
     <div className="exhibitions-page">
-      <div className="current">
+      {/* <div className="current">
         <h2>Current Exhibition:</h2>
+        
+      </div> */}
+      <div className="upcoming">
+        <h2>Upcoming Exhibitions:</h2>
+        <div className="exhibition-section">
+          <div className="exhibition-header">
+            <h3>CALISSE DE GOBLET</h3>{" "}
+          </div>
+          <img
+            className="gallery-image-vert"
+            src={calissePoster}
+            alt="Poster for the group art show exhibition Calisse de Goblet"
+          />{" "}
+        </div>
+      </div>
+      <div className="previous">
+        <h2>Previous Exhibitions:</h2>
         <div className="exhibition-section">
           <div className="exhibition-header">
             <h3>MON DÉPANNEUR</h3>{" "}
@@ -23,15 +41,7 @@ function Exhibitions() {
             src={monDepPoster}
             alt="Poster group art show exhibition Mon Dépanneur"
           />{" "}
-        </div>
-      </div>
-      {/* <div className="upcoming">
-        <h2>Upcoming Exhibitions:</h2>
-
-        
-      </div> */}
-      <div className="previous">
-        <h2>Previous Exhibitions:</h2>
+        </div>{" "}
         <div className="exhibition-section">
           <div className="exhibition-header">
             <h3>BLUEPRINTS OF BELONGING</h3>
