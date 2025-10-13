@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import doggyPoster from "../assets/yo-doggy-poster.png";
 import waitingPoster from "../assets/english_purgatory.jpg";
-import calissePoster from "../assets/calisse-de-goblet-poster-square.png";
+import calissePoster from "../assets/calisse-de-goblet-poster.jpg";
 // import lamp from "../assets/entretemps-lamp.jpg";
 // import key from "../assets/entretemps-key.jpg";
 // import beadMaze from "../assets/bead-maze-close.jpg";
