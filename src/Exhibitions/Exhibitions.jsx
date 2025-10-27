@@ -18,7 +18,7 @@ function Exhibitions() {
         
       </div> */}
       <div className="upcoming">
-        <h2>Upcoming Exhibitions:</h2>
+        <h2>Expositions à venir / Upcoming Exhibitions:</h2>
         <div className="exhibition-section">
           <div className="exhibition-header">
             <h3>CALISSE DE GOBLET</h3>{" "}
@@ -31,7 +31,7 @@ function Exhibitions() {
         </div>
       </div>
       <div className="previous">
-        <h2>Previous Exhibitions:</h2>
+        <h2>Expositions passées / Previous Exhibitions:</h2>
         <div className="exhibition-section">
           <div className="exhibition-header">
             <h3>MON DÉPANNEUR</h3>{" "}

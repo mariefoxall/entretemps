@@ -9,9 +9,9 @@ function Menu() {
       </div>
       <nav className="nav-menu-links">
         <div className="nav-menu-links__container">
-          <a href="/exhibitions">exhibitions</a>
+          <a href="/exhibitions">expositions/exhibitions</a>
           <a href="/contact">contact</a>
-          <a href="/visit">visit</a>
+          <a href="/visit">visit(e)</a>
           <a href="http://wastedeffort.myshopify.com">shop</a>
         </div>
       </nav>

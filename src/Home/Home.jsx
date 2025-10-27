@@ -18,6 +18,7 @@ function Home() {
         <Link to="/exhibitions">
           <h1 className="home-heading" ref={animated}></h1>
         </Link>{" "}
+        <p className="studio-gallery">atelier / galerie</p>
         <p className="studio-gallery">studio / gallery</p>
       </div>
     </>

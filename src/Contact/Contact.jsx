@@ -6,7 +6,7 @@ import pcOutside from "../assets/princesse-cowboy-outside.jpg";
 export default function Contact() {
   return (
     <div className="contact-page">
-      <h2>Say bonjour/hi</h2>
+      <h2>Dites bonjour/hi</h2>
       <div className="contact-section"></div>{" "}
       {/* <h3 className="spacing highlight">
         Submissions are open for our upcoming show, <br />
@@ -48,10 +48,12 @@ export default function Contact() {
         <br />- Sketches of a work you're proposing with supporting images of
         your previous work
       </p> */}
+      <h3>Avez-vous des questions?</h3>
+      <h3>Voulez-vous soumettre votre dossier pour considération?</h3>
       <h3>Do you have a burning question?</h3>
       <h3>Want to submit your work for consideration?</h3>
       <p className="email-address">
-        Give us a shout at{" "}
+        Envoyez-nous un message au{" "}
         <a className="email-link" href="mailto:bonjour.hi@entretemps.ca">
           bonjour.hi@entretemps.ca
         </a>

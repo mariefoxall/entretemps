@@ -18,7 +18,9 @@ export default function BookingDialog() {
   return (
     <React.Fragment className="booking">
       <button className="booking-button" onClick={handleClickOpen}>
-        Book an appointment to<br></br> visit our current exhibition
+        Faites un RDV pour
+        <br /> visiter notre expo actuelle /<br /> Book an appointment to
+        <br></br> visit our current exhibition
       </button>
       <Dialog
         scroll="body"
