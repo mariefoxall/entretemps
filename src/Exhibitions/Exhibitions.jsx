@@ -13,12 +13,8 @@ import "./Exhibitions.css";
 function Exhibitions() {
   return (
     <div className="exhibitions-page">
-      {/* <div className="current">
+      <div className="current">
         <h2>Current Exhibition:</h2>
-        
-      </div> */}
-      <div className="upcoming">
-        <h2>Expositions à venir / Upcoming Exhibitions:</h2>
         <div className="exhibition-section">
           <div className="exhibition-header">
             <h3>CALISSE DE GOBLET</h3>{" "}
@@ -30,6 +26,10 @@ function Exhibitions() {
           />{" "}
         </div>
       </div>
+      {/* <div className="upcoming">
+        <h2>Expositions à venir / Upcoming Exhibitions:</h2>
+       
+      </div> */}
       <div className="previous">
         <h2>Expositions passées / Previous Exhibitions:</h2>
         <div className="exhibition-section">
