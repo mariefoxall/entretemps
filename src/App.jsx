@@ -10,6 +10,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Purgatory from "./Exhibitions/Purgatory";
 import YoDoggy from "./Exhibitions/Doggy";
 import PrincesseEtCowboy from "./Exhibitions/PrincesseCowboy";
+import MonDepanneur from "./Exhibitions/Depanneur";
+import CalisseDeGoblet from "./Exhibitions/Goblet";
+import BlueprintsOfBelonging from "./Exhibitions/Blueprints";
 function App() {
   return (
     <Router>
@@ -29,6 +32,15 @@ function App() {
           element={<Purgatory />}
         />
         <Route path="/exhibitions/yo-doggy" element={<YoDoggy />} />
+        <Route path="/exhibitions/mon-depanneur" element={<MonDepanneur />} />
+        <Route
+          path="/exhibitions/calisse-de-goblet"
+          element={<CalisseDeGoblet />}
+        />
+        <Route
+          path="/exhibitions/blueprints-of-belonging"
+          element={<BlueprintsOfBelonging />}
+        />
         <Route
           path="/exhibitions/princesse-et-cowboy"
           element={<PrincesseEtCowboy />}

@@ -8,7 +8,7 @@ import "./Exhibitions.css";
 
 function YoDoggy() {
   return (
-    <div className="exhibition-section">
+    <div className="exhibitions-page">
       <h3>YO DOGGY!</h3>
       <img
         className="gallery-image"

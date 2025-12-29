@@ -1,5 +1,5 @@
 :root {
-  font-family: "Sen", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.5;
@@ -25,7 +25,7 @@ input,
 select,
 textarea,
 button {
-  font-family: "Sen", sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 2em;
 }
 
