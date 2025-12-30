@@ -1,4 +1,15 @@
 import groupShot from "../assets/calisse/calisse-group-shot.jpg";
+import mariaIda1 from "../assets/calisse/maria-struk-goblet-1.jpg";
+import mariaIda2 from "../assets/calisse/maria-struk-goblet-2.jpg";
+import mariaIda3 from "../assets/calisse/maria-struk-goblet-3.jpg";
+import kaleyFlowers from "../assets/calisse/kaley-flowers.jpg";
+import SSmith1 from "../assets/calisse/SSmith-1.jpg";
+import SSmith2 from "../assets/calisse/SSmith-2.jpg";
+import melLeandra from "../assets/calisse/mel-leandra-1.jpg";
+import teresa1 from "../assets/calisse/teresa-bergen-1.jpg";
+import teresa2 from "../assets/calisse/teresa-bergen-2.jpg";
+import jade from "../assets/calisse/jade.jpg";
+
 import "./Exhibitions.css";
 
 function CalisseDeGoblet() {
@@ -26,111 +37,130 @@ function CalisseDeGoblet() {
             <p className="medium"> </p>
           </div>
         </div>
-
-        {/* <div className="gallery-image-vert">
+        <div className="gallery-image-trio">
           <img
             className="image-in-group"
-            src={dontForget}
-            alt="Sculpted post-it-notes by Kasia Sosnowski in Polymer clay"
+            src={mariaIda1}
+            alt="Blown glass goblet in primary colours by Maria Struk - Maria Ida Designs"
           />
           <div className="artist-info">
-            <p className="artist-name"> Kasia Sosnowski</p>
-            <p className="title-of-work"> Don't Forget</p>
-            <p className="medium">Polymer clay</p>
+            <p className="artist-name">Maria Ida Designs by Maria Struk</p>
+            <p className="title-of-work">With a cherry on top</p>
+            <p className="medium">Blown glass</p>
           </div>
         </div>
-        <div className="gallery-image-vert">
+        <div className="gallery-image-trio">
           <img
             className="image-in-group"
-            src={vieuxMontreal}
-            alt="Those were the days by Fred Bouin & Jade Boutilier. Turned wood beer bottle in walnut, with cast label in white bronze, yellow bronze"
+            src={mariaIda2}
+            alt="Blown glass goblet in primary colours by Maria Struk - Maria Ida Designs"
           />
           <div className="artist-info">
-            <p className="artist-name"> Fred Bouin & Jade Boutilier</p>
-            <p className="title-of-work"> Those were the days</p>
-            <p className="medium">Walnut, white bronze, yellow bronze</p>
+            <p className="artist-name"> </p>
+            <p className="title-of-work"> </p>
+            <p className="medium"> </p>
           </div>
         </div>
-
+        <div className="gallery-image-trio">
+          <img
+            className="image-in-group"
+            src={mariaIda3}
+            alt="Blown glass goblet in primary colours by Maria Struk - Maria Ida Designs"
+          />
+          <div className="artist-info">
+            <p className="artist-name"> </p>
+            <p className="title-of-work"> </p>
+            <p className="medium"> </p>
+          </div>
+        </div>
         <div className="gallery-image">
           <img
             className="image-in-group"
-            src={depLaura}
-            alt="Retro dep between my 3 1/2 and Rosemont by Tiphaine Lenaïk. Ink and acrylic on canvas"
-          />{" "}
-          <div className="artist-info">
-            <p className="artist-name"> Tiphaine Lenaïk</p>
-            <p className="title-of-work">
-              {" "}
-              Retro dep between my 3 1/2 and Rosemont
-            </p>
-            <p className="medium">Ink and acrylic on canvas</p>
-          </div>
-        </div>
-
-        <div className="gallery-image-vert">
-          <img
-            className="image-in-group"
-            src={jarjar}
-            alt="Salt-fired porcelain Thank You bag by Etty Anderson"
+            src={kaleyFlowers}
+            alt="Large ceramic goblet with digital imagery"
           />
           <div className="artist-info">
-            <p className="artist-name"> Etty Anderson</p>
-            <p className="title-of-work">Jar Jar Binks visits New York </p>
-            <p className="medium">Salt-fired porcelain</p>
+            <p className="artist-name">Kaley Flowers</p>
+            <p className="title-of-work">Chalice for the bees</p>
+            <p className="medium">Stoneware, glaze, image transfer</p>
           </div>
         </div>
         <div className="gallery-image-vert">
           <img
             className="image-in-group"
-            src={pointDaide}
-            alt="Asymmetrically framed photographs with blue and yellow mats by Katya Konioukhova"
-          />{" "}
+            src={SSmith1}
+            alt="Large salt-fired blue and white ceramic goblet wings and talons"
+          />
           <div className="artist-info">
-            <p className="artist-name">Katya Konioukhova</p>
+            <p className="artist-name">Stefanie Smith</p>
+            <p className="title-of-work">Watcher Playu Invites You to Imbibe</p>
+            <p className="medium">Salt-fired porcelain, pigment</p>
+          </div>
+        </div>
+        <div className="gallery-image-vert">
+          <img
+            className="image-in-group"
+            src={SSmith2}
+            alt="Large peach and white ceramic goblet with wings and tentacles"
+          />
+          <div className="artist-info">
+            <p className="artist-name">Stefanie Smith</p>
+            <p className="title-of-work">Watcher Calamu Presents Their Cup</p>
+            <p className="medium">Porcelain, pigment</p>
+          </div>
+        </div>
+        <div className="gallery-image">
+          <img
+            className="image-in-group"
+            src={melLeandra}
+            alt="Three soda-fired ceramic goblets in shades of grey and peach"
+          />
+          <div className="artist-info">
+            <p className="artist-name"> Leandra Brandson x Melanie Barnett </p>
             <p className="title-of-work">
-              point d'aide I & II
-              <p className="medium">
-                impression jet d'encre sur papier 100% cotton, <br />
-                cadre sur mesure par Cool Cadre
-              </p>
+              Little Tongues Goblet / Tendril Goblet / Two-Lip Goblet
+            </p>
+            <p className="medium">
+              Soda-fired porcelaneous stoneware, ^10 reduction, high-temp wire
             </p>
           </div>
         </div>
-
         <div className="gallery-image-vert">
           <img
             className="image-in-group"
-            src={heritage}
-            alt="Shakoor (héritage fruits et légumes) par Camille Zurini. Transfert d’image et acrylique sur bois"
-          />{" "}
+            src={teresa1}
+            alt="Ceramic goblet shaped like a girl riding a horse"
+          />
           <div className="artist-info">
-            <p className="artist-name">Camille Zurini</p>
-            <p className="title-of-work">
-              Héritage fruits et légumes <br />
-              Shakoor (héritage fruits et légumes)
-            </p>
-            <p className="medium">Transfert d’image et acrylique sur bois</p>
+            <p className="artist-name">Teresa Bergen</p>
+            <p className="title-of-work">Wild Ride </p>
+            <p className="medium"> </p>
           </div>
         </div>
         <div className="gallery-image-vert">
           <img
             className="image-in-group"
-            src={vers}
-            alt="Beaded gummy worms in a plastic bag by Marie Foxall"
-          />{" "}
+            src={teresa2}
+            alt="Ceramic goblet with two human legs at the base"
+          />
           <div className="artist-info">
-            <p className="artist-name">Marie Foxall</p>
-            <p className="title-of-work">VERS</p>
-            <p className="medium">glass beads, lucite, thread & plastic</p>
+            <p className="artist-name">Teresa Bergen</p>
+            <p className="title-of-work">Long Legged Goblet Girl in a Gale </p>
+            <p className="medium"> </p>
           </div>
         </div>
-
-        <img
-          className="gallery-image"
-          src={smallDepWorksFramed}
-          alt="Shakoor (héritage fruits et légumes) par Camille Zurini. Transfert d’image et acrylique sur bois"
-        /> */}
+        <div className="gallery-image">
+          <img
+            className="image-in-group"
+            src={jade}
+            alt="Cast aluminum goblet with spikes"
+          />
+          <div className="artist-info">
+            <p className="artist-name">Jade Boutilier</p>
+            <p className="title-of-work">Thornucopia</p>
+            <p className="medium">Cast aluminum</p>
+          </div>
+        </div>
       </div>
     </div>
   );
