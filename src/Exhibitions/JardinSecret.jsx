@@ -37,7 +37,7 @@ function JardinSecret() {
             <a className="email-link" href="mailto:bonjour.hi@entretemps.ca">
               bonjour.hi@entretemps.ca
             </a>{" "}
-            avec les infos suivants:
+            avec un seul document pdf incluant les infos suivants:
           </p>
           <br />
           <p>1. Une courte biographie (100 mots environ)</p>
@@ -66,11 +66,11 @@ function JardinSecret() {
             <a className="email-link" href="mailto:bonjour.hi@entretemps.ca">
               bonjour.hi@entretemps.ca
             </a>{" "}
-            with the following info:
+            with a single pdf document including the following info:
           </p>
           <br />
           <p>1. A short biography (around 100 words)</p>
-          <p>2. Un portfolio of previous work relevant to your submission</p>
+          <p>2. A portfolio of previous work relevant to your submission</p>
           <p>
             3. Images of the piece(s) you are submitting or a sketch/rendering
             of the work you plan to create
