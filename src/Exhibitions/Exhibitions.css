@@ -73,3 +73,12 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.open-call-poster {
+  width: 40%;
+  min-width: 400px;
+}
+
+.open-call {
+  display: flex;
+}
