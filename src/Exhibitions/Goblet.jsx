@@ -9,6 +9,10 @@ import melLeandra from "../assets/calisse/mel-leandra-1.jpg";
 import teresa1 from "../assets/calisse/teresa-bergen-1.jpg";
 import teresa2 from "../assets/calisse/teresa-bergen-2.jpg";
 import jade from "../assets/calisse/jade.jpg";
+import ettyCan from "../assets/calisse/goblet-can-3-web.jpg";
+import ettyGrapes from "../assets/calisse/goblet-grapes-2-web.jpg";
+import ettyLemon from "../assets/calisse/goblet-lemon-3-web.jpg";
+import claraMarie from "../assets/calisse/marie-clara.jpg";
 
 import "./Exhibitions.css";
 
@@ -159,6 +163,53 @@ function CalisseDeGoblet() {
             <p className="artist-name">Jade Boutilier</p>
             <p className="title-of-work">Thornucopia</p>
             <p className="medium">Cast aluminum</p>
+          </div>
+        </div>
+        <div className="gallery-image-trio">
+          <img
+            className="image-in-group"
+            src={ettyCan}
+            alt="Nerikomi sculpted goblet with sculpted aluminum can"
+          />
+        </div>
+        <div className="gallery-image-trio">
+          <img
+            className="image-in-group"
+            src={ettyGrapes}
+            alt="Nerikomi sculpted goblet with sculpted grapes"
+          />
+        </div>
+        <div className="gallery-image-trio">
+          <img
+            className="image-in-group"
+            src={ettyLemon}
+            alt="Nerikomi sculpted goblet with sculpted lemon"
+          />
+        </div>
+        <div className="artist-info">
+          <p className="artist-name">Etty Anderson</p>
+          <p className="title-of-work">
+            What If This Is What They Were Like, Normally (I, II, III)
+          </p>
+          <p className="medium">Colored porcelain, glaze, lustre</p>
+        </div>
+        <div className="gallery-image">
+          <img
+            className="image-in-group"
+            src={claraMarie}
+            alt="Blobby black beeswax sculpted goblet & smooth iridescent white paper clay goblet with silver chains"
+          />
+          <div className="artist-info-double">
+            <div className="artist-info">
+              <p className="artist-name">Marie Foxall</p>
+              <p className="title-of-work">GLOB-A-LABRA</p>
+              <p className="medium">Beeswax, cotton wick</p>
+            </div>
+            <div className="artist-info">
+              <p className="artist-name">Clara Tissot</p>
+              <p className="title-of-work">Anzar (ⴰⵏⵣⴰⵔ)</p>
+              <p className="medium">Argile papier, médium, pigments et métal</p>
+            </div>
           </div>
         </div>
       </div>

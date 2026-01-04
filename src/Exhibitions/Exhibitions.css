@@ -82,3 +82,8 @@
 .open-call {
   display: flex;
 }
+
+.artist-info-double {
+  display: flex;
+  justify-content: space-between;
+}
