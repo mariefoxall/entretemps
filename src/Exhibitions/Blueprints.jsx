@@ -1,10 +1,11 @@
 import groupShot from "../assets/bpob/bpob-wide-shot.jpg";
 import TJ from "../assets/bpob/TJ.jpg";
-// import largeFramed from "../assets/bpob/blueprints-large-framed.jpg";
+
 import satinee from "../assets/bpob/satinee.jpg";
 import andrea from "../assets/bpob/andrea.jpg";
 import lyrael from "../assets/bpob/lyrael.jpg";
 import cyanoTee from "../assets/bpob/cyanotype-tee.jpg";
+import largeFramed from "../assets/bpob/framed.jpg";
 import "./Exhibitions.css";
 
 function BlueprintsOfBelonging() {
@@ -32,13 +33,13 @@ function BlueprintsOfBelonging() {
             alt="Various works by photographer Lawrence Fafard in the Blueprints of Belonging exhibition, installed on the walls and on plinths"
           />
         </div>
-        {/* <div className="gallery-image-vert">
+        <div className="gallery-image-vert">
           <img
             className="image-in-group"
             src={largeFramed}
             alt="Various works by photographer Lawrence Fafard in the Blueprints of Belonging exhibition, installed on the walls and on plinths"
           />
-        </div> */}
+        </div>
         <div className="gallery-image-vert">
           <img
             className="image-in-group"
