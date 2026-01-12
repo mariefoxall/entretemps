@@ -1,6 +1,6 @@
 import groupShot from "../assets/bpob/bpob-wide-shot.jpg";
-import largeFramed from "../assets/bpob/blueprints-large-framed.jpg";
 import TJ from "../assets/bpob/TJ.jpg";
+import largeFramed from "../assets/bpob/blueprints-large-framed.jpg";
 import satinee from "../assets/bpob/satinee.jpg";
 import andrea from "../assets/bpob/andrea.jpg";
 import lyrael from "../assets/bpob/lyrael.jpg";
