@@ -30,7 +30,7 @@ function Exhibitions() {
         <h2>Expositions à venir / Upcoming Exhibitions:</h2>
         <div className="open-call">
           <img
-            className="open-call-poster"
+            className="poster-image"
             src={jsPoster}
             alt="Poster for Jardin Secret Exhibition with link to submit a secret"
           />
