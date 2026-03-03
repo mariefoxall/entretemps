@@ -107,10 +107,11 @@ function JardinSecret() {
           * Maximum 500 charactères/characters
           <br />
           * Aucun secret jugé offensif ou haineux ne sera accepté pour ce
-          projet. La sélection sera à la discrétion de la galerie.
+          projet. <br />
+          La sélection sera à la discrétion de la galerie.
           <br />* No secrets deemed offensive or hateful will be accepted for
-          this project. The selection will be at the discretion of the
-          gallery.{" "}
+          this project. <br />
+          The selection will be at the discretion of the gallery.{" "}
         </p>
       </div>
     </div>
