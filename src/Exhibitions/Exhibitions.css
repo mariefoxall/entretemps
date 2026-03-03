@@ -81,9 +81,23 @@
 
 .open-call {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 80px;
 }
 
 .artist-info-double {
   display: flex;
   justify-content: space-between;
+}
+
+.secret-button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccccff;
+  background-color: blanchedalmond;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  color: #3b3b7f;
+  cursor: pointer;
 }

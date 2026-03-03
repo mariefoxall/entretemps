@@ -7,6 +7,7 @@ import monDepPoster from "../assets/dep-poster-letter-web.jpg";
 import BPOB from "../assets/BlueprintsOfBelongingPoster.jpg";
 import call from "../assets/jardin-secret/jardin-secret-call-submissions.jpg";
 import appel from "../assets/jardin-secret/jardin-secret-appel-dossiers.jpg";
+import jsPoster from "../assets/JS-poster.jpg";
 import "./Exhibitions.css";
 
 function Exhibitions() {
@@ -28,24 +29,18 @@ function Exhibitions() {
       <div className="upcoming">
         <h2>Expositions à venir / Upcoming Exhibitions:</h2>
         <div className="open-call">
-          <div>
-            <Link to="https://forms.gle/8xXYR12jPh1bhE1D6">
-              <img
-                className="open-call-poster"
-                src={appel}
-                alt="Poster for open call for Jardin Secret Exhibition with link to application form in French"
-              />
-            </Link>
-          </div>
-          <div>
-            <Link to="https://forms.gle/PAeWjrwNRnXGGGG37">
-              <img
-                className="open-call-poster"
-                src={call}
-                alt="Poster for open call for Jardin Secret Exhibition with link to application form in English"
-              />
-            </Link>
-          </div>
+          <img
+            className="open-call-poster"
+            src={jsPoster}
+            alt="Poster for Jardin Secret Exhibition with link to submit a secret"
+          />
+          <Link to="/exhibitions/jardin-secret">
+            <button className="secret-button">
+              Partagez un secret
+              <br />
+              Divulge a secret
+            </button>
+          </Link>
         </div>
       </div>
       <div className="previous">

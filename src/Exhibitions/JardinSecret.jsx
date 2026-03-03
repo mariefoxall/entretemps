@@ -1,12 +1,54 @@
-import call from "../assets/jardin-secret/jardin-secret-call-submissions.jpg";
-import appel from "../assets/jardin-secret/jardin-secret-appel-dossiers.jpg";
 import "./JardinSecret.css";
+import { addSecretToDB } from "../firebase";
+import { useEffect, useState } from "react";
+import { getSecretsFromDB } from "../firebase";
 
 function JardinSecret() {
+  const [secret, setSecret] = useState("");
+  const [success, setSuccess] = useState(false);
+
+  // useEffect(() => {
+  //   console.log(getSecretsFromDB());
+  // }, []);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const date = new Date();
+    try {
+      const dbResult = await addSecretToDB(secret, date);
+      console.warn(dbResult);
+
+      setSuccess(true);
+      resetForm();
+    } catch (e) {
+      console.warn(e);
+      console.warn("oops");
+    }
+  };
+
+  const handleSecretTyping = (event) => {
+    setSuccess(false);
+    const { value } = event.target;
+
+    if (value.length <= 300 && value.length > 0) {
+      setSecret(value);
+    }
+  };
+
+  const resetForm = () => {
+    setSecret("");
+    const secretInput = document.getElementById("secret-textarea");
+    secretInput.value = "";
+  };
+
+  const checkDisabled = () => {
+    return secret.length > 300 || secret.length <= 0;
+  };
+
   return (
     <div className="exhibitions-page">
       <h3>JARDIN SECRET</h3>
-      <div className="exhibition-description">
+      {/* <div className="exhibition-description">
         <p>
           Une précieuse forteresse de sentiments ou de pensées intimes que nous
           voulons garder exclusivement pour nous. Nos mots cachés, notre poésie
@@ -15,74 +57,61 @@ function JardinSecret() {
           want to keep exclusively for ourselves. Our hidden words, our intimate
           poetry, a place where we feel safe and held.
         </p>
-      </div>
-      <div className="exhibition-image-gallery">
-        <div className="gallery-image-vert">
-          <img
-            className="image-in-group"
-            src={appel}
-            alt="Poster for open call for Jardin Secret Exhibition"
-          />
+      </div> */}
+      <div id="form-description">
+        <p>
+          Lors de notre vernissage, nous allons partager nos secrets. <br />
+          Écrivez un secret dans la boîte ci-dessous, et il sera ajouté à notre
+          machine à bonbons pour être choisi au hasard et qu'un inconnu puisse
+          le garder pour toi.{" "}
+        </p>
+        <p>
+          At our launch party, we will share secrets. <br />
+          Divulge a secret in the box below, and it will be added to our candy
+          machine to be chosen at random for a stranger to hold onto.
+        </p>
+        <div className="form-section">
+          <label htmlFor="secret-textarea">SECRETS*</label>
+          <form
+            id="secret-form"
+            onSubmit={handleSubmit}
+            className="secret-submission-form"
+            aria-describedby="form-description"
+          >
+            <textarea
+              onChange={handleSecretTyping}
+              id="secret-textarea"
+              required
+              maxLength={500}
+              rows={8}
+              placeholder="Écrivez votre secret ici!
+            Write your secret here!"
+            ></textarea>
+            <div className="submit-button-and-message">
+              <button
+                disabled={checkDisabled()}
+                className="secret-submit-button"
+                type="submit"
+              >
+                Soumettre / Submit
+              </button>{" "}
+              {success && (
+                <p className="success">
+                  Success! Your bid has been submitted :)
+                </p>
+              )}
+            </div>
+          </form>
         </div>
-        <div className="gallery-image-vert">
-          <img
-            className="image-in-group"
-            src={call}
-            alt="Poster for open call for Jardin Secret Exhibition"
-          />
-        </div>
-        <div className="submission-section">
-          <p>
-            Pour remettre votre soumission, envoyez un courriel à{" "}
-            <a className="email-link" href="mailto:bonjour.hi@entretemps.ca">
-              bonjour.hi@entretemps.ca
-            </a>{" "}
-            avec un seul document pdf incluant les infos suivants:
-          </p>
+        <p className="extra-details">
+          * Maximum 500 charactères/characters
           <br />
-          <p>1. Une courte biographie (100 mots environ)</p>
-          <p>
-            2. Un portfolio d'exemples doeuvres pertinents pour votre soumission{" "}
-          </p>
-          <p>
-            3. Des images de l'oeuvre que vous voulez soumettre ou un
-            croquis/rendu de ce que vous prévoyez créer{" "}
-          </p>
-          <p>
-            4. Déclaration courte (500 mots ou moins) décrivant ce que Jardin
-            Secret signifie pour vous et comment votre travail s'inscrit dans le
-            cadre du thème.
-          </p>
-          <br />
-          <br />
-          <p>
-            Date limite pour envoyer les soumissions: 23:59 vendredi le 26
-            janvier
-          </p>
-        </div>
-        <div className="submission-section">
-          <p>
-            To submit your application, send an email to{" "}
-            <a className="email-link" href="mailto:bonjour.hi@entretemps.ca">
-              bonjour.hi@entretemps.ca
-            </a>{" "}
-            with a single pdf document including the following info:
-          </p>
-          <br />
-          <p>1. A short biography (around 100 words)</p>
-          <p>2. A portfolio of previous work relevant to your submission</p>
-          <p>
-            3. Images of the piece(s) you are submitting or a sketch/rendering
-            of the work you plan to create
-          </p>
-          <p>
-            4. Short statement (under 500 words) describing what Jardin Secret
-            (secret garden) means to you, and how your works fits within the
-            scope of the theme.
-          </p>
-          <br />
-          <br /> <p>Submissions close at 11:59pm on Friday January 26</p>
-        </div>
+          * Aucun secret jugé offensif ou haineux ne sera accepté pour ce
+          projet. La sélection sera à la discrétion de la galerie.
+          <br />* No secrets deemed offensive or hateful will be accepted for
+          this project. The selection will be at the discretion of the
+          gallery.{" "}
+        </p>
       </div>
     </div>
   );
