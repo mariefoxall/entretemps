@@ -6,6 +6,7 @@ import { getSecretsFromDB } from "../firebase";
 function JardinSecret() {
   const [secret, setSecret] = useState("");
   const [success, setSuccess] = useState(false);
+  const [disabled, setDisabled] = useState(true);
 
   // useEffect(() => {
   //   console.log(getSecretsFromDB());
@@ -32,6 +33,9 @@ function JardinSecret() {
 
     if (value.length <= 300 && value.length > 0) {
       setSecret(value);
+      setDisabled(false);
+    } else {
+      setDisabled(true);
     }
   };
 
@@ -39,10 +43,6 @@ function JardinSecret() {
     setSecret("");
     const secretInput = document.getElementById("secret-textarea");
     secretInput.value = "";
-  };
-
-  const checkDisabled = () => {
-    return secret.length > 300 || secret.length <= 0;
   };
 
   return (
@@ -88,13 +88,15 @@ function JardinSecret() {
             Write your secret here!"
             ></textarea>
             <div className="submit-button-and-message">
-              <button
-                disabled={checkDisabled()}
-                className="secret-submit-button"
-                type="submit"
-              >
-                Soumettre / Submit
-              </button>{" "}
+              {!success && (
+                <button
+                  disabled={disabled}
+                  className="secret-submit-button"
+                  type="submit"
+                >
+                  Soumettre / Submit
+                </button>
+              )}
               {success && (
                 <p className="success">
                   now it's our little secret <br />
@@ -104,16 +106,18 @@ function JardinSecret() {
             </div>
           </form>
         </div>
-        <p className="extra-details">
-          * Maximum 500 charactères/characters
-          <br />
-          * Aucun secret jugé offensif ou haineux ne sera accepté pour ce
-          projet. <br />
-          La sélection sera à la discrétion de la galerie.
-          <br />* No secrets deemed offensive or hateful will be accepted for
-          this project. <br />
-          The selection will be at the discretion of the gallery.{" "}
-        </p>
+        {!success && (
+          <p className="extra-details">
+            * Maximum 500 charactères/characters
+            <br />
+            * Aucun secret jugé offensif ou haineux ne sera accepté pour ce
+            projet. <br />
+            La sélection sera à la discrétion de la galerie.
+            <br />* No secrets deemed offensive or hateful will be accepted for
+            this project. <br />
+            The selection will be at the discretion of the gallery.{" "}
+          </p>
+        )}
       </div>
     </div>
   );
