@@ -95,7 +95,12 @@ function JardinSecret() {
               >
                 Soumettre / Submit
               </button>{" "}
-              {success && <p className="success">Merci! Thank you!</p>}
+              {success && (
+                <p className="success">
+                  now it's our little secret <br />
+                  maintenant c'est notre petit secret
+                </p>
+              )}
             </div>
           </form>
         </div>
