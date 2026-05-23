@@ -1,54 +1,21 @@
-import "./JardinSecret.css";
-import { addSecretToDB } from "../firebase";
-import { useEffect, useState } from "react";
-import { getSecretsFromDB } from "../firebase";
+import groupShot from "../assets/jardin-secret/group-shot-right.jpg";
+import daria1 from "../assets/jardin-secret/daria-1.webp";
+import daria2 from "../assets/jardin-secret/daria-2.webp";
+import jade from "../assets/jardin-secret/jade.webp";
+import gigi from "../assets/jardin-secret/gigi.webp";
+import MCMB from "../assets/jardin-secret/MC-M-B.webp";
+import JK from "../assets/jardin-secret/jason-karolanne.webp";
+import caro from "../assets/jardin-secret/caro-etchart.jpg";
+import elpis from "../assets/jardin-secret/elpis-ii.jpg";
+import cereal from "../assets/jardin-secret/cereal.webp";
+
+import "./Exhibitions.css";
 
 function JardinSecret() {
-  const [secret, setSecret] = useState("");
-  const [success, setSuccess] = useState(false);
-  const [disabled, setDisabled] = useState(true);
-
-  // useEffect(() => {
-  //   console.log(getSecretsFromDB());
-  // }, []);
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const date = new Date();
-    try {
-      const dbResult = await addSecretToDB(secret, date);
-      console.warn(dbResult);
-
-      setSuccess(true);
-      resetForm();
-    } catch (e) {
-      console.warn(e);
-      console.warn("oops");
-    }
-  };
-
-  const handleSecretTyping = (event) => {
-    setSuccess(false);
-    const { value } = event.target;
-
-    if (value.length <= 300 && value.length > 0) {
-      setSecret(value);
-      setDisabled(false);
-    } else {
-      setDisabled(true);
-    }
-  };
-
-  const resetForm = () => {
-    setSecret("");
-    const secretInput = document.getElementById("secret-textarea");
-    secretInput.value = "";
-  };
-
   return (
     <div className="exhibitions-page">
       <h3>JARDIN SECRET</h3>
-      {/* <div className="exhibition-description">
+      <div className="exhibition-description">
         <p>
           Une précieuse forteresse de sentiments ou de pensées intimes que nous
           voulons garder exclusivement pour nous. Nos mots cachés, notre poésie
@@ -57,67 +24,142 @@ function JardinSecret() {
           want to keep exclusively for ourselves. Our hidden words, our intimate
           poetry, a place where we feel safe and held.
         </p>
-      </div> */}
-      <div id="form-description">
-        <p>
-          Lors de notre vernissage, nous allons partager nos secrets. <br />
-          Écrivez un secret dans la boîte ci-dessous, et il sera ajouté à notre
-          machine à bonbons pour être choisi au hasard et qu'un inconnu puisse
-          le garder pour toi.{" "}
-        </p>
-        <p>
-          At our launch party, we will share secrets. <br />
-          Divulge a secret in the box below, and it will be added to our candy
-          machine to be chosen at random for a stranger to hold onto.
-        </p>
-        <div className="form-section">
-          <label htmlFor="secret-textarea">SECRETS*</label>
-          <form
-            id="secret-form"
-            onSubmit={handleSubmit}
-            className="secret-submission-form"
-            aria-describedby="form-description"
-          >
-            <textarea
-              onChange={handleSecretTyping}
-              id="secret-textarea"
-              required
-              maxLength={500}
-              rows={8}
-              placeholder="Écrivez votre secret ici!
-            Write your secret here!"
-            ></textarea>
-            <div className="submit-button-and-message">
-              {!success && (
-                <button
-                  disabled={disabled}
-                  className="secret-submit-button"
-                  type="submit"
-                >
-                  Soumettre / Submit
-                </button>
-              )}
-              {success && (
-                <p className="success">
-                  now it's our little secret <br />
-                  maintenant c'est notre petit secret
-                </p>
-              )}
-            </div>
-          </form>
+      </div>
+      <div className="exhibition-image-gallery">
+        <div className="gallery-image">
+          <img
+            className="image-in-group"
+            src={groupShot}
+            alt="Various works by artists in the Jardin Secret exhibition, installed on the walls and on plinths"
+          />
+          <div className="artist-info">
+            <p className="artist-name"> </p>
+            <p className="title-of-work"> </p>
+            <p className="medium"> </p>
+          </div>
         </div>
-        {!success && (
-          <p className="extra-details">
-            * Maximum 500 charactères/characters
-            <br />
-            * Aucun secret jugé offensif ou haineux ne sera accepté pour ce
-            projet. <br />
-            La sélection sera à la discrétion de la galerie.
-            <br />* No secrets deemed offensive or hateful will be accepted for
-            this project. <br />
-            The selection will be at the discretion of the gallery.{" "}
-          </p>
-        )}
+
+        <div className="gallery-image-vert">
+          <img
+            className="image-in-group"
+            src={caro}
+            alt="Crocheted cocoon with colourful yarn spilling out, photos of experiential installation with a human wearing a similar cocoon"
+          />
+          <div className="artist-info">
+            <p className="artist-name">Caro Etchart</p>
+            <p className="title-of-work">Coucoun</p>
+            <p className="medium">
+              Photography, crochet. Textile sculpture: Crochet, embroidery.
+              Mixed yarn, beads, metal wire
+            </p>
+          </div>
+        </div>
+        <div className="gallery-image-vert">
+          <img
+            className="image-in-group"
+            src={elpis}
+            alt="Ceramic iris vase with beaded mobile and ceramic creatures hidden inside"
+          />
+          <div className="artist-info">
+            <p className="artist-name">Josie-Anne Lemieux</p>
+            <p className="title-of-work">Elpis II</p>
+            <p className="medium">
+              faïence québécoise, pigments, émail, lustre, laitons, quartz,
+              grenat, perles d’eau douce, soie.
+            </p>
+          </div>
+        </div>
+        <div className="gallery-image">
+          <img
+            className="image-in-group"
+            src={daria1}
+            alt="Glass terrarium with ceramic and cloth sculptures inside - condensation on the glass obscures the view of the sculptures inside"
+          />
+          <div className="artist-info">
+            <p className="artist-name"> </p>
+            <p className="title-of-work"> </p>
+            <p className="medium"> </p>
+          </div>
+        </div>
+        <div className="gallery-image">
+          <img
+            className="image-in-group"
+            src={daria2}
+            alt="Metal terrarium with resting on a bed of soil, glass shards inside"
+          />
+          <div className="artist-info">
+            <p className="artist-name">Daria Fontaine Pasquali</p>
+            <p className="title-of-work">Shifting Immortals</p>
+            <p className="medium">
+              Aluminium,bronze jaune, terre, argile crue, papier, verre, coton,
+              graines de fleurs
+            </p>
+          </div>
+        </div>
+
+        <div className="gallery-image-vert">
+          <img
+            className="image-in-group"
+            src={MCMB}
+            alt="Vases by Mao & Chris, Beaded diary by Marie Foxall, Ceramic stacked shards by Bridget Fairbank"
+          />
+        </div>
+        <div className="gallery-image-vert">
+          <img
+            className="image-in-group"
+            src={JK}
+            alt="Abstract painting on tiled ceramics by Jason Mitchell, grid of colourful polaroids by Karolanne Solis"
+          />
+        </div>
+        <div className="gallery-image">
+          <img
+            className="image-in-group"
+            src={gigi}
+            alt="Three ceramic sculptures on a plinth, abstract gargoyle creatures"
+          />
+          <div className="artist-info">
+            <p className="artist-name">Gigi Wenger</p>
+            <p className="title-of-work">
+              The gritty, the grunge & the gorgeous
+            </p>
+            <p className="medium">
+              ceramic (red clay, electric fire cone 5, oxydation, various
+              glazes)
+            </p>
+          </div>
+        </div>
+        <div className="gallery-image">
+          <img
+            className="image-in-group"
+            src={jade}
+            alt="Sterling silver locket with bean inside and handmade chain with pearls"
+          />
+          <div className="artist-info">
+            <p className="artist-name">Jade Boutilier</p>
+            <p className="title-of-work">Not Yet, But Soon </p>
+            <p className="medium">
+              Sterling silver with Freshwater pearls, Brecciated Jasper from BC
+              carved by Atelier J.A.R., adzuki bean, moss, glass{" "}
+            </p>
+          </div>
+        </div>
+        <div className="gallery-image">
+          <img
+            className="image-in-group"
+            src={cereal}
+            alt="Ceramic life-sized cereal boxes arranged as a fort"
+          />
+          <div className="artist-info">
+            <p className="artist-name">Etty Anderson</p>
+            <p className="title-of-work">
+              If By Some Magic a Fort of Cereal Boxes Could Render You Invisible
+              to Your Older Brothers While You Try and Have a Nice Breakfast
+            </p>
+            <p className="medium">
+              Stoneware, porcelain, stain, glaze. Cone 6 oxidation{" "}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

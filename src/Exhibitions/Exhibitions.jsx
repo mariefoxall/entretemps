@@ -8,6 +8,7 @@ import BPOB from "../assets/BlueprintsOfBelongingPoster.jpg";
 import call from "../assets/jardin-secret/jardin-secret-call-submissions.jpg";
 import appel from "../assets/jardin-secret/jardin-secret-appel-dossiers.jpg";
 import jsPoster from "../assets/JS-poster.jpg";
+import canicule from "../assets/canicule/canicule-open-call.webp";
 import "./Exhibitions.css";
 
 function Exhibitions() {
@@ -27,20 +28,20 @@ function Exhibitions() {
         </div>
       </div> */}
       <div className="upcoming">
-        <h2>Expositions à venir / Upcoming Exhibitions:</h2>
+        <h2>
+          Expositions à venir / <br />
+          Upcoming Exhibitions:
+        </h2>
         <div className="open-call">
-          <img
-            className="poster-image"
-            src={jsPoster}
-            alt="Poster for Jardin Secret Exhibition with link to submit a secret"
-          />
-          <Link to="/exhibitions/jardin-secret">
-            <button className="secret-button">
-              Partagez un secret
-              <br />
-              Divulge a secret
-            </button>
-          </Link>
+          <div className="exhibition-section">
+            <Link to="/exhibitions/canicule">
+              <img
+                className="poster-image"
+                src={canicule}
+                alt="Poster for the open call for submissions for the exhibition Canicule"
+              />
+            </Link>
+          </div>
         </div>
       </div>
       <div className="previous">
@@ -49,6 +50,15 @@ function Exhibitions() {
         </h2>
         <p>Click the poster for images from that show!</p>
         <div className="previous-posters">
+          <div className="exhibition-section">
+            <Link to="/exhibitions/jardin-secret">
+              <img
+                className="poster-image"
+                src={jsPoster}
+                alt="Poster for Jardin Secret Exhibition "
+              />
+            </Link>
+          </div>
           <div className="exhibition-section">
             <Link to="/exhibitions/calisse-de-goblet">
               <img
@@ -82,7 +92,7 @@ function Exhibitions() {
               <img
                 className="poster-image"
                 src={princesseCowboy}
-                alt="Poster for upcoming exhibition Princesse et Cowboy"
+                alt="Poster for previous exhibition Princesse et Cowboy"
               />{" "}
             </Link>
           </div>
