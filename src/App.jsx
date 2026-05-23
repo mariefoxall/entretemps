@@ -14,6 +14,8 @@ import MonDepanneur from "./Exhibitions/Depanneur";
 import CalisseDeGoblet from "./Exhibitions/Goblet";
 import BlueprintsOfBelonging from "./Exhibitions/Blueprints";
 import JardinSecret from "./Exhibitions/JardinSecret";
+import Canicule from "./Exhibitions/Canicule";
+
 function App() {
   return (
     <Router>
@@ -43,6 +45,7 @@ function App() {
           element={<BlueprintsOfBelonging />}
         />
         <Route path="/exhibitions/jardin-secret" element={<JardinSecret />} />
+        <Route path="/exhibitions/canicule" element={<Canicule />} />
         <Route
           path="/exhibitions/princesse-et-cowboy"
           element={<PrincesseEtCowboy />}

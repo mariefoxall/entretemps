@@ -1,0 +1,13 @@
+.application-button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+.application-button:hover {
+  background-color: #ff3b2e;
+}
