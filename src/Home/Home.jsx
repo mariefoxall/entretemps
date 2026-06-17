@@ -15,8 +15,8 @@ function Home() {
   return (
     <>
       <div className="home-section">
-        <Link to="/exhibitions">
-          <h1 className="home-heading" ref={animated}></h1>
+        <Link to="/exhibitions" aria-label="Entretemps — navigate to exhibitions">
+          <h1 className="home-heading" ref={animated} aria-hidden="true"></h1>
         </Link>{" "}
         <p className="studio-gallery">atelier / galerie</p>
         <p className="studio-gallery">studio / gallery</p>
