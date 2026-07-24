@@ -19,9 +19,10 @@ function Visit() {
         <p>{t("duringExhibition")}</p>
         <p>{t("weekendHours")}</p>
         {/* <p>- from time to time</p> */}
-        <p>{t("weekdayHours")}</p>
+        <p>
+          {t("weekdayPrefix")} <Booking />
+        </p>
       </div>
-      <Booking />
     </div>
   );
 }

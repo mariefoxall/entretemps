@@ -6,5 +6,5 @@
   "hoursHeading": "Heures d'ouverture :",
   "duringExhibition": "Lors d'une exposition :",
   "weekendHours": "Samedi & dimanche : 12h - 17h",
-  "weekdayHours": "Jours de semaine : sur rendez-vous"
+  "weekdayPrefix": "Jours de semaine :"
 }
