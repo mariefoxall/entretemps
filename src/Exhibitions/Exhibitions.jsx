@@ -8,26 +8,26 @@ import BPOB from "../assets/BlueprintsOfBelongingPoster.jpg";
 import call from "../assets/jardin-secret/jardin-secret-call-submissions.jpg";
 import appel from "../assets/jardin-secret/jardin-secret-appel-dossiers.jpg";
 import jsPoster from "../assets/JS-poster.jpg";
-import canicule from "../assets/canicule/canicule-open-call.webp";
+import canicule from "../assets/canicule/canicule-heat-wave-poster.jpg";
 import "./Exhibitions.css";
 
 function Exhibitions() {
   return (
     <div className="exhibitions-page">
-      {/* <div className="current">
+      <div className="current">
         <h2>Current Exhibition:</h2>
         <div className="exhibition-section">
           <div className="exhibition-header">
-            <h3>CALISSE DE GOBLET</h3>{" "}
+            {/* <h3>CANICULE</h3>{" "} */}
           </div>
           <img
             className="poster-image"
-            src={calissePoster}
-            alt="Poster for the group art show exhibition Calisse de Goblet"
-          />{" "}
+            src={canicule}
+            alt="Poster for the group exhibition Canicule"
+          />
         </div>
-      </div> */}
-      <div className="upcoming">
+      </div>
+      {/* <div className="upcoming">
         <h2>
           Expositions à venir / <br />
           Upcoming Exhibitions:
@@ -43,7 +43,7 @@ function Exhibitions() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="previous">
         <h2>
           Expositions passées /<br /> Previous Exhibitions:
