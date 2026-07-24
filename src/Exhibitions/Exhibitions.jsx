@@ -15,7 +15,9 @@ function Exhibitions() {
   return (
     <div className="exhibitions-page">
       <div className="current">
-        <h2>Current Exhibition:</h2>
+        <h2>
+          Exposition actuelle / <br /> Current exhibition:
+        </h2>
         <div className="exhibition-section">
           <div className="exhibition-header">
             {/* <h3>CANICULE</h3>{" "} */}
