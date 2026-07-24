@@ -1,6 +1,5 @@
 .nav-menu {
   position: relative;
-  cursor: pointer;
   padding: 0.6em;
 }
 
@@ -14,11 +13,9 @@
   transition: 0.3s grid ease;
 }
 
-.nav-menu:hover {
-  .nav-menu-links {
-    grid-template-rows: 1fr;
-    z-index: 10;
-  }
+.nav-menu-links--open {
+  grid-template-rows: 1fr;
+  z-index: 10;
 }
 .nav-menu-links__container {
   display: flex;
@@ -36,30 +33,34 @@
   padding: 0.2rem 0.4rem;
 }
 
-.nav-menu-links__container > a:hover {
+.nav-menu-links__container > a:hover,
+.nav-menu-links__container > a:focus-visible {
   background-color: rgb(255, 119, 88);
   color: #e6e6ff;
+  outline: none;
 }
 
 .burger {
   height: 3em;
-  margin-bottom: -2px;
 }
 
 .burger-border {
+  display: flex;
+  align-items: center;
+  background: none;
   border: 1px solid black;
   border-radius: 8px;
-  padding: 4px 6px 0;
+  padding: 6px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 480px) {
   .burger {
     height: 2em;
-    margin-bottom: -4px;
   }
 
   .burger-border {
-    padding: 2px 4px 0;
+    padding: 4px;
   }
 
   .nav-menu-links__container > a {

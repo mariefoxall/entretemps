@@ -20,11 +20,9 @@ function App() {
   return (
     <Router>
       <header>
-        <button className="home-button">
-          <Link to="/">
-            <img src={entretempsLogo} className="logo" alt="Entretemps logo" />
-          </Link>
-        </button>
+        <Link to="/" className="home-button" aria-label="Navigate to home">
+          <img src={entretempsLogo} className="logo" alt="Entretemps logo" />
+        </Link>
         <Menu />
       </header>
       <Routes>
