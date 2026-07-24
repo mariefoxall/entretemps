@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import vitrine from "../assets/depanneur/outside-sunny-mon-dep.jpg";
 import depLaura from "../assets/depanneur/dep-Laura-Tiphaine-Lenaik.jpg";
 import dontForget from "../assets/depanneur/dont-forget-kasia-sosnowski.jpg";
@@ -12,29 +13,20 @@ import vers from "../assets/depanneur/vers-marie-foxall.jpg";
 import "./Exhibitions.css";
 
 function MonDepanneur() {
+  const { t } = useTranslation("exhibitions");
+
   return (
     <div className="exhibitions-page">
       <h3>MON DÉPANNEUR</h3>
       <div className="exhibition-description">
-        <p>
-          Exposition collective fêtant nos expériences partagées et
-          individuelles autour de cette institution qui nous rassemble tous,
-          l'honorable dépanneur.
-        </p>
-        <br />
-
-        <p>
-          Group exhibition celebrating our shared and individual experiences
-          surrounding this institution that brings us all together, the
-          honourable dépanneur
-        </p>
+        <p>{t("depanneur.description")}</p>
       </div>
       <div className="exhibition-image-gallery">
         <div className="gallery-image">
           <img
             className="image-in-group"
             src={groupShot}
-            alt="Various works by artists in the Mon Depanneur exhibition, installed on the walls and on plinths"
+            alt={t("depanneur.images.groupShot")}
           />
           <div className="artist-info">
             <p className="artist-name"> </p>
@@ -47,7 +39,7 @@ function MonDepanneur() {
           <img
             className="image-in-group"
             src={dontForget}
-            alt="Sculpted post-it-notes by Kasia Sosnowski in Polymer clay"
+            alt={t("depanneur.images.dontForget")}
           />
           <div className="artist-info">
             <p className="artist-name"> Kasia Sosnowski</p>
@@ -59,7 +51,7 @@ function MonDepanneur() {
           <img
             className="image-in-group"
             src={vieuxMontreal}
-            alt="Those were the days by Fred Bouin & Jade Boutilier. Turned wood beer bottle in walnut, with cast label in white bronze, yellow bronze"
+            alt={t("depanneur.images.vieuxMontreal")}
           />
           <div className="artist-info">
             <p className="artist-name"> Fred Bouin & Jade Boutilier</p>
@@ -72,7 +64,7 @@ function MonDepanneur() {
           <img
             className="image-in-group"
             src={depLaura}
-            alt="Retro dep between my 3 1/2 and Rosemont by Tiphaine Lenaïk. Ink and acrylic on canvas"
+            alt={t("depanneur.images.depLaura")}
           />{" "}
           <div className="artist-info">
             <p className="artist-name"> Tiphaine Lenaïk</p>
@@ -88,7 +80,7 @@ function MonDepanneur() {
           <img
             className="image-in-group"
             src={jarjar}
-            alt="Salt-fired porcelain Thank You bag by Etty Anderson"
+            alt={t("depanneur.images.jarjar")}
           />
           <div className="artist-info">
             <p className="artist-name"> Etty Anderson</p>
@@ -100,7 +92,7 @@ function MonDepanneur() {
           <img
             className="image-in-group"
             src={pointDaide}
-            alt="Asymmetrically framed photographs with blue and yellow mats by Katya Konioukhova"
+            alt={t("depanneur.images.pointDaide")}
           />{" "}
           <div className="artist-info">
             <p className="artist-name">Katya Konioukhova</p>
@@ -118,7 +110,7 @@ function MonDepanneur() {
           <img
             className="image-in-group"
             src={heritage}
-            alt="Shakoor (héritage fruits et légumes) par Camille Zurini. Transfert d’image et acrylique sur bois"
+            alt={t("depanneur.images.heritage")}
           />{" "}
           <div className="artist-info">
             <p className="artist-name">Camille Zurini</p>
@@ -133,7 +125,7 @@ function MonDepanneur() {
           <img
             className="image-in-group"
             src={vers}
-            alt="Beaded gummy worms in a plastic bag by Marie Foxall"
+            alt={t("depanneur.images.vers")}
           />{" "}
           <div className="artist-info">
             <p className="artist-name">Marie Foxall</p>
@@ -145,7 +137,7 @@ function MonDepanneur() {
         <img
           className="gallery-image"
           src={smallDepWorksFramed}
-          alt="Shakoor (héritage fruits et légumes) par Camille Zurini. Transfert d’image et acrylique sur bois"
+          alt={t("depanneur.images.heritage")}
         />
       </div>
     </div>

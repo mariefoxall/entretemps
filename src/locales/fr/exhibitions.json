@@ -1,0 +1,107 @@
+{
+  "listing": {
+    "currentHeading": "Exposition actuelle :",
+    "previousHeading": "Expositions passées :",
+    "clickPosterHint": "Cliquez sur l'affiche pour voir des images de cette exposition!"
+  },
+  "canicule": {
+    "posterAlt": "Affiche de l'exposition collective Canicule",
+    "description": "Notre exposition estivale arrive à grands pas ! Vous sentez la chaleur monter ? Joignez-vous à nous pour célébrer (ou déplorer) les semaines les plus chaudes de l'année et soumettez vos œuvres d'art les plus torrides.",
+    "applyPrompt": "Faites votre demande ici :",
+    "applyButtonLabel": "Postuler",
+    "applyUrl": "https://forms.gle/uThyqkQ8xirXx59eA"
+  },
+  "jardinSecret": {
+    "posterAlt": "Affiche de l'exposition Jardin Secret",
+    "description": "Une précieuse forteresse de sentiments ou de pensées intimes que nous voulons garder exclusivement pour nous. Nos mots cachés, notre poésie intime, un lieu où nous nous sentons en sécurité et protégés.",
+    "images": {
+      "groupShot": "Diverses œuvres d'artistes de l'exposition Jardin Secret, installées sur les murs et sur des socles",
+      "caro": "Cocon au crochet avec de la laine colorée qui déborde, photos d'une installation expérientielle avec une personne portant un cocon similaire",
+      "elpis": "Vase iris en céramique avec mobile perlé et créatures en céramique cachées à l'intérieur",
+      "daria1": "Terrarium en verre avec des sculptures en céramique et en tissu à l'intérieur - la condensation sur le verre brouille la vue des sculptures",
+      "daria2": "Terrarium en métal reposant sur un lit de terre, avec des éclats de verre à l'intérieur",
+      "MCMB": "Vases par Mao & Chris, journal perlé par Marie Foxall, éclats de céramique empilés par Bridget Fairbank",
+      "JK": "Peinture abstraite sur céramique carrelée par Jason Mitchell, grille de polaroids colorés par Karolanne Solis",
+      "gigi": "Trois sculptures en céramique sur un socle, créatures gargouilles abstraites",
+      "jade": "Médaillon en argent sterling avec une fève à l'intérieur et chaîne faite main avec perles",
+      "cereal": "Boîtes de céréales en céramique grandeur nature disposées en fort"
+    }
+  },
+  "goblet": {
+    "posterAlt": "Affiche de l'exposition collective Calisse de Goblet",
+    "description": "No matter comment tu le dis, the goblet perseveres à travers le temps et l’espace: jamais left behind. Goths, kings and plebs, tous pognent le mighty chalice with reverence or normality, ritual or pomp. Verser ton potion, wine ou gatorade and behold Calisse de Goblet!",
+    "images": {
+      "groupShot": "Diverses œuvres d'artistes de l'exposition Calisse de Goblet, installées sur les murs et sur des socles",
+      "mariaIda": "Gobelet en verre soufflé aux couleurs primaires par Maria Struk - Maria Ida Designs",
+      "kaleyFlowers": "Grand gobelet en céramique avec image numérique",
+      "SSmith1": "Grand gobelet en céramique cuite au sel bleu et blanc avec ailes et serres",
+      "SSmith2": "Grand gobelet en céramique pêche et blanc avec ailes et tentacules",
+      "melLeandra": "Trois gobelets en céramique cuite à la soude dans des tons de gris et pêche",
+      "teresa1": "Gobelet en céramique en forme de fille chevauchant un cheval",
+      "teresa2": "Gobelet en céramique avec deux jambes humaines à la base",
+      "jade": "Gobelet en aluminium moulé avec pointes",
+      "ettyCan": "Gobelet sculpté en nerikomi avec canette en aluminium sculptée",
+      "ettyGrapes": "Gobelet sculpté en nerikomi avec raisins sculptés",
+      "ettyLemon": "Gobelet sculpté en nerikomi avec citron sculpté",
+      "claraMarie": "Gobelet difforme en cire d'abeille noire et gobelet lisse en argile papier blanc irisé avec chaînes argentées"
+    }
+  },
+  "depanneur": {
+    "posterAlt": "Affiche de l'exposition collective Mon Dépanneur",
+    "description": "Exposition collective fêtant nos expériences partagées et individuelles autour de cette institution qui nous rassemble tous, l'honorable dépanneur.",
+    "images": {
+      "groupShot": "Diverses œuvres d'artistes de l'exposition Mon Dépanneur, installées sur les murs et sur des socles",
+      "dontForget": "Notes autocollantes sculptées par Kasia Sosnowski en argile polymère",
+      "vieuxMontreal": "Those were the days par Fred Bouin & Jade Boutilier. Bouteille de bière en bois tourné en noyer, avec étiquette moulée en bronze blanc et bronze jaune",
+      "depLaura": "Retro dep between my 3 1/2 and Rosemont par Tiphaine Lenaïk. Encre et acrylique sur toile",
+      "jarjar": "Sac « Merci » en porcelaine cuite au sel par Etty Anderson",
+      "pointDaide": "Photographies encadrées de façon asymétrique avec passe-partout bleu et jaune par Katya Konioukhova",
+      "heritage": "Shakoor (héritage fruits et légumes) par Camille Zurini. Transfert d’image et acrylique sur bois",
+      "vers": "Vers en gomme perlés dans un sac en plastique par Marie Foxall"
+    }
+  },
+  "blueprints": {
+    "posterAlt": "Affiche de l'exposition Blueprints of Belonging",
+    "description": "Blueprints of Belonging est une exposition photographique qui trace une cartographie sensible des regards, des gestes et des fragments de quotidien de personnes trans et non binaires. Principalement réalisées en cyanotypes, les œuvres évoquent la mémoire, l'empreinte et la construction - comme des plans architecturaux d'une appartenance en perpétuelle négociation. En déconstruisant et recomposant les visages, l'exposition devient un acte de résistance et de réclamation. Elle compose une archive vivante où les vies trans ne sont pas seulement visibles, mais enracinées, affirmées et habitées.",
+    "images": {
+      "wideShot": "Diverses œuvres du photographe Lawrence Fafard dans l'exposition Blueprints of Belonging, installées sur les murs et sur des socles",
+      "portraitOverlay": "Portrait photographique en acétate superposé en noir/blanc/bleu par Lawrence Fafard",
+      "portraitPlexiglass": "Portrait photographique en plexiglas superposé en niveaux de gris par Lawrence Fafard",
+      "cyanoTee": "T-shirt botanique en cyanotype par Lawrence Fafard"
+    }
+  },
+  "princesseCowboy": {
+    "posterAlt": "Affiche de l'exposition Princesse et Cowboy",
+    "images": {
+      "vitrine": "Photo générale de l'exposition à travers la vitrine",
+      "dechirure": "Œuvre suspendue en textile et fusain",
+      "chasseur": "Sculpture en techniques mixtes à partir d'objets trouvés",
+      "book": "Livre de table basse en techniques mixtes, collage et illustration à la main",
+      "chevet1": "Sculpture en techniques mixtes avec boîte-vitrine et bougie en argile",
+      "table": "Sculpture en techniques mixtes faite de bois, peinture et objets trouvés",
+      "repos": "Sculpture en techniques mixtes faite de bois, argile et objets trouvés"
+    }
+  },
+  "doggy": {
+    "posterAlt": "Affiche de l'exposition YO DOGGY!",
+    "images": {
+      "overall": "Vue large de la galerie d'art avec des sculptures multicolores partout",
+      "dogAndKong": "Sérigraphie d'un chien et lampe en céramique en forme de jouet Kong",
+      "captive": "Collier de chien orné en bronze et suède sur un support en laiton et bois",
+      "woofWoofNight": "Double laisse et collier en céramique dans la vitrine de la galerie la nuit",
+      "bestInShowTrophy": "Trophée en céramique surmonté d'une figurine de caniche sculptée en céramique",
+      "bestInShowCups": "Gobelets en céramique avec base sculptée en forme de tête de caniche"
+    }
+  },
+  "purgatory": {
+    "posterAlt": "Affiche de l'exposition Purgatory is a Waiting Room",
+    "images": {
+      "overall": "Vue large de la galerie d'art avec des sculptures multicolores partout",
+      "lamp": "Lampe en papier mâché multicolore de six pieds de haut et palmier",
+      "lampAndMaze": "Lampe en cotte de mailles de céramique et lucite suspendue au-dessus d'une structure en lucite avec des perles de céramique et de bois",
+      "cigarettes": "Cendrier en céramique lustrée argentée rempli de cigarettes perlées",
+      "ceramicCorner": "Grande lampe en céramique, table en céramique rose aux coins arrondis avec un vase multicolore excentrique posé dessus",
+      "chair": "Chaise en lucite transparent et vert lime comiquement haute, avec un sac en céramique tacheté et un mégot de cigarette géant en céramique"
+    }
+  }
+}

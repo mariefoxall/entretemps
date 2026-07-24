@@ -1,0 +1,17 @@
+{
+  "booking": {
+    "triggerButton": "Faites un RDV pour visiter notre expo actuelle",
+    "dialogTitle": "ENTRETEMPS - Prendre rendez-vous"
+  },
+  "secretForm": {
+    "descriptionLaunch": "Lors de notre vernissage, nous allons partager nos secrets.",
+    "descriptionInstructions": "Écrivez un secret dans la boîte ci-dessous, et il sera ajouté à notre machine à bonbons pour être choisi au hasard et qu'un inconnu puisse le garder pour toi.",
+    "label": "SECRETS*",
+    "placeholder": "Écrivez votre secret ici!",
+    "submitButton": "Soumettre",
+    "successMessage": "maintenant c'est notre petit secret",
+    "errorMessage": "Une erreur est survenue lors de l'envoi de votre secret. Veuillez réessayer.",
+    "maxLengthNote": "* Maximum 500 caractères",
+    "moderationNote": "* Aucun secret jugé offensif ou haineux ne sera accepté pour ce projet. La sélection sera à la discrétion de la galerie."
+  }
+}

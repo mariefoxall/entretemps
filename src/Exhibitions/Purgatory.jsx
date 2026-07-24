@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import cigarettes from "../assets/cigarettes.jpg";
 import lamp from "../assets/portal-lamp-cropped.jpg";
 import lampAndMaze from "../assets/chainmail-lamp-bead-maze.jpg";
@@ -7,6 +8,8 @@ import ceramicCorner from "../assets/ceram-corner.jpg";
 import "./Exhibitions.css";
 
 function Purgatory() {
+  const { t } = useTranslation("exhibitions");
+
   return (
     <div className="exhibitions-page">
       <div className="exhibition-section">
@@ -15,32 +18,32 @@ function Purgatory() {
         <img
           className="gallery-image"
           src={overall}
-          alt="Wide shot of art gallery with multicolored sculptures all over"
+          alt={t("purgatory.images.overall")}
         />
         <img
           className="gallery-image-vert"
           src={lamp}
-          alt="Multicolored 6-foot tall paper mache lamp and palm tree"
+          alt={t("purgatory.images.lamp")}
         />
         <img
           className="gallery-image-vert"
           src={lampAndMaze}
-          alt="Ceramic and lucite chainmail lamp hanging above lucite structure with ceramic and wood beads"
+          alt={t("purgatory.images.lampAndMaze")}
         />
         <img
           className="gallery-image"
           src={cigarettes}
-          alt="Silver ceramic lustre ashtray full of beaded cigarettes"
+          alt={t("purgatory.images.cigarettes")}
         />
         <img
           className="gallery-image-vert"
           src={ceramicCorner}
-          alt="Tall ceramic lamp, pink ceramic table with rounded edges and a wacky multicolored vessel placed on top"
+          alt={t("purgatory.images.ceramicCorner")}
         />
         <img
           className="gallery-image-vert"
           src={chair}
-          alt="Comically tall lime green & clear lucite chair with speckled ceramic bag and giant ceramic cigarette butt"
+          alt={t("purgatory.images.chair")}
         />
       </div>
     </div>

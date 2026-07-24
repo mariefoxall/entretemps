@@ -2,10 +2,13 @@ import "./JardinSecret.css";
 import { addSecretToDB } from "../firebase";
 import { useEffect, useState } from "react";
 import { getSecretsFromDB } from "../firebase";
+import { useTranslation } from "react-i18next";
 
 function JardinSecretForm() {
+  const { t } = useTranslation("forms");
   const [secret, setSecret] = useState("");
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
   const [disabled, setDisabled] = useState(true);
 
   // useEffect(() => {
@@ -20,15 +23,17 @@ function JardinSecretForm() {
       console.warn(dbResult);
 
       setSuccess(true);
+      setError(false);
       resetForm();
     } catch (e) {
       console.warn(e);
-      console.warn("oops");
+      setError(true);
     }
   };
 
   const handleSecretTyping = (event) => {
     setSuccess(false);
+    setError(false);
     const { value } = event.target;
 
     if (value.length <= 300 && value.length > 0) {
@@ -60,18 +65,11 @@ function JardinSecretForm() {
       </div> */}
       <div id="form-description">
         <p>
-          Lors de notre vernissage, nous allons partager nos secrets. <br />
-          Écrivez un secret dans la boîte ci-dessous, et il sera ajouté à notre
-          machine à bonbons pour être choisi au hasard et qu'un inconnu puisse
-          le garder pour toi.{" "}
-        </p>
-        <p>
-          At our launch party, we will share secrets. <br />
-          Divulge a secret in the box below, and it will be added to our candy
-          machine to be chosen at random for a stranger to hold onto.
+          {t("secretForm.descriptionLaunch")} <br />
+          {t("secretForm.descriptionInstructions")}
         </p>
         <div className="form-section">
-          <label htmlFor="secret-textarea">SECRETS*</label>
+          <label htmlFor="secret-textarea">{t("secretForm.label")}</label>
           <form
             id="secret-form"
             onSubmit={handleSubmit}
@@ -84,8 +82,7 @@ function JardinSecretForm() {
               required
               maxLength={500}
               rows={8}
-              placeholder="Écrivez votre secret ici!
-            Write your secret here!"
+              placeholder={t("secretForm.placeholder")}
             ></textarea>
             <div className="submit-button-and-message">
               {!success && (
@@ -94,13 +91,15 @@ function JardinSecretForm() {
                   className="secret-submit-button"
                   type="submit"
                 >
-                  Soumettre / Submit
+                  {t("secretForm.submitButton")}
                 </button>
               )}
               {success && (
-                <p className="success">
-                  now it's our little secret <br />
-                  maintenant c'est notre petit secret
+                <p className="success">{t("secretForm.successMessage")}</p>
+              )}
+              {error && (
+                <p className="form-error" role="alert">
+                  {t("secretForm.errorMessage")}
                 </p>
               )}
             </div>
@@ -108,14 +107,9 @@ function JardinSecretForm() {
         </div>
         {!success && (
           <p className="extra-details">
-            * Maximum 500 charactères/characters
+            {t("secretForm.maxLengthNote")}
             <br />
-            * Aucun secret jugé offensif ou haineux ne sera accepté pour ce
-            projet. <br />
-            La sélection sera à la discrétion de la galerie.
-            <br />* No secrets deemed offensive or hateful will be accepted for
-            this project. <br />
-            The selection will be at the discretion of the gallery.{" "}
+            {t("secretForm.moderationNote")}
           </p>
         )}
       </div>

@@ -1,9 +1,12 @@
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
+import { Link, useParams } from "react-router-dom";
 import "./Home.css";
 import { makeTextWavy } from "../animations";
-import { Link } from "react-router-dom";
 
 function Home() {
+  const { t } = useTranslation("home");
+  const { lang } = useParams();
   const animated = useRef(null);
 
   useEffect(() => {
@@ -15,11 +18,10 @@ function Home() {
   return (
     <>
       <div className="home-section">
-        <Link to="/exhibitions" aria-label="Entretemps — navigate to exhibitions">
+        <Link to={`/${lang}/exhibitions`} aria-label={t("heroLinkLabel")}>
           <h1 className="home-heading" ref={animated} aria-hidden="true"></h1>
         </Link>{" "}
-        <p className="studio-gallery">atelier / galerie</p>
-        <p className="studio-gallery">studio / gallery</p>
+        <p className="studio-gallery">{t("tagline")}</p>
       </div>
     </>
   );

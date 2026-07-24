@@ -1,0 +1,24 @@
+.language-toggle {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.language-toggle__option {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.language-toggle__option[aria-current="true"] {
+  border-color: currentColor;
+  font-weight: 600;
+}
+
+.language-toggle__option:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}

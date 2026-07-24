@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import groupShot from "../assets/jardin-secret/group-shot-right.jpg";
 import daria1 from "../assets/jardin-secret/daria-1.webp";
 import daria2 from "../assets/jardin-secret/daria-2.webp";
@@ -12,25 +13,20 @@ import cereal from "../assets/jardin-secret/cereal.webp";
 import "./Exhibitions.css";
 
 function JardinSecret() {
+  const { t } = useTranslation("exhibitions");
+
   return (
     <div className="exhibitions-page">
       <h3>JARDIN SECRET</h3>
       <div className="exhibition-description">
-        <p>
-          Une précieuse forteresse de sentiments ou de pensées intimes que nous
-          voulons garder exclusivement pour nous. Nos mots cachés, notre poésie
-          intime, un lieu où nous nous sentons en sécurité et protégés. <br />
-          <br />A precious fortress of intimate feelings or thoughts that we
-          want to keep exclusively for ourselves. Our hidden words, our intimate
-          poetry, a place where we feel safe and held.
-        </p>
+        <p>{t("jardinSecret.description")}</p>
       </div>
       <div className="exhibition-image-gallery">
         <div className="gallery-image">
           <img
             className="image-in-group"
             src={groupShot}
-            alt="Various works by artists in the Jardin Secret exhibition, installed on the walls and on plinths"
+            alt={t("jardinSecret.images.groupShot")}
           />
           <div className="artist-info">
             <p className="artist-name"> </p>
@@ -43,7 +39,7 @@ function JardinSecret() {
           <img
             className="image-in-group"
             src={caro}
-            alt="Crocheted cocoon with colourful yarn spilling out, photos of experiential installation with a human wearing a similar cocoon"
+            alt={t("jardinSecret.images.caro")}
           />
           <div className="artist-info">
             <p className="artist-name">Caro Etchart</p>
@@ -58,7 +54,7 @@ function JardinSecret() {
           <img
             className="image-in-group"
             src={elpis}
-            alt="Ceramic iris vase with beaded mobile and ceramic creatures hidden inside"
+            alt={t("jardinSecret.images.elpis")}
           />
           <div className="artist-info">
             <p className="artist-name">Josie-Anne Lemieux</p>
@@ -73,7 +69,7 @@ function JardinSecret() {
           <img
             className="image-in-group"
             src={daria1}
-            alt="Glass terrarium with ceramic and cloth sculptures inside - condensation on the glass obscures the view of the sculptures inside"
+            alt={t("jardinSecret.images.daria1")}
           />
           <div className="artist-info">
             <p className="artist-name"> </p>
@@ -85,7 +81,7 @@ function JardinSecret() {
           <img
             className="image-in-group"
             src={daria2}
-            alt="Metal terrarium with resting on a bed of soil, glass shards inside"
+            alt={t("jardinSecret.images.daria2")}
           />
           <div className="artist-info">
             <p className="artist-name">Daria Fontaine Pasquali</p>
@@ -101,21 +97,21 @@ function JardinSecret() {
           <img
             className="image-in-group"
             src={MCMB}
-            alt="Vases by Mao & Chris, Beaded diary by Marie Foxall, Ceramic stacked shards by Bridget Fairbank"
+            alt={t("jardinSecret.images.MCMB")}
           />
         </div>
         <div className="gallery-image-vert">
           <img
             className="image-in-group"
             src={JK}
-            alt="Abstract painting on tiled ceramics by Jason Mitchell, grid of colourful polaroids by Karolanne Solis"
+            alt={t("jardinSecret.images.JK")}
           />
         </div>
         <div className="gallery-image">
           <img
             className="image-in-group"
             src={gigi}
-            alt="Three ceramic sculptures on a plinth, abstract gargoyle creatures"
+            alt={t("jardinSecret.images.gigi")}
           />
           <div className="artist-info">
             <p className="artist-name">Gigi Wenger</p>
@@ -132,7 +128,7 @@ function JardinSecret() {
           <img
             className="image-in-group"
             src={jade}
-            alt="Sterling silver locket with bean inside and handmade chain with pearls"
+            alt={t("jardinSecret.images.jade")}
           />
           <div className="artist-info">
             <p className="artist-name">Jade Boutilier</p>
@@ -147,7 +143,7 @@ function JardinSecret() {
           <img
             className="image-in-group"
             src={cereal}
-            alt="Ceramic life-sized cereal boxes arranged as a fort"
+            alt={t("jardinSecret.images.cereal")}
           />
           <div className="artist-info">
             <p className="artist-name">Etty Anderson</p>

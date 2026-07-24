@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import groupShot from "../assets/calisse/calisse-group-shot.jpg";
 import mariaIda1 from "../assets/calisse/maria-struk-goblet-1.jpg";
 import mariaIda2 from "../assets/calisse/maria-struk-goblet-2.jpg";
@@ -17,23 +18,20 @@ import claraMarie from "../assets/calisse/marie-clara.jpg";
 import "./Exhibitions.css";
 
 function CalisseDeGoblet() {
+  const { t } = useTranslation("exhibitions");
+
   return (
     <div className="exhibitions-page">
       <h3>CALISSE DE GOBLET</h3>
       <div className="exhibition-description">
-        <p>
-          No matter comment tu le dis, the goblet perseveres à travers le temps
-          et l’espace: jamais left behind. Goths, kings and plebs, tous pognent
-          le mighty chalice with reverence or normality, ritual or pomp. Verser
-          ton potion, wine ou gatorade and behold Calisse de Goblet!
-        </p>
+        <p>{t("goblet.description")}</p>
       </div>
       <div className="exhibition-image-gallery">
         <div className="gallery-image">
           <img
             className="image-in-group"
             src={groupShot}
-            alt="Various works by artists in the Calisse de Goblet exhibition, installed on the walls and on plinths"
+            alt={t("goblet.images.groupShot")}
           />
           <div className="artist-info">
             <p className="artist-name"> </p>
@@ -45,7 +43,7 @@ function CalisseDeGoblet() {
           <img
             className="image-in-group"
             src={mariaIda1}
-            alt="Blown glass goblet in primary colours by Maria Struk - Maria Ida Designs"
+            alt={t("goblet.images.mariaIda")}
           />
           <div className="artist-info">
             <p className="artist-name">Maria Ida Designs by Maria Struk</p>
@@ -57,7 +55,7 @@ function CalisseDeGoblet() {
           <img
             className="image-in-group"
             src={mariaIda2}
-            alt="Blown glass goblet in primary colours by Maria Struk - Maria Ida Designs"
+            alt={t("goblet.images.mariaIda")}
           />
           <div className="artist-info">
             <p className="artist-name"> </p>
@@ -69,7 +67,7 @@ function CalisseDeGoblet() {
           <img
             className="image-in-group"
             src={mariaIda3}
-            alt="Blown glass goblet in primary colours by Maria Struk - Maria Ida Designs"
+            alt={t("goblet.images.mariaIda")}
           />
           <div className="artist-info">
             <p className="artist-name"> </p>
@@ -81,7 +79,7 @@ function CalisseDeGoblet() {
           <img
             className="image-in-group"
             src={kaleyFlowers}
-            alt="Large ceramic goblet with digital imagery"
+            alt={t("goblet.images.kaleyFlowers")}
           />
           <div className="artist-info">
             <p className="artist-name">Kaley Flowers</p>
@@ -93,7 +91,7 @@ function CalisseDeGoblet() {
           <img
             className="image-in-group"
             src={SSmith1}
-            alt="Large salt-fired blue and white ceramic goblet wings and talons"
+            alt={t("goblet.images.SSmith1")}
           />
           <div className="artist-info">
             <p className="artist-name">Stefanie Smith</p>
@@ -105,7 +103,7 @@ function CalisseDeGoblet() {
           <img
             className="image-in-group"
             src={SSmith2}
-            alt="Large peach and white ceramic goblet with wings and tentacles"
+            alt={t("goblet.images.SSmith2")}
           />
           <div className="artist-info">
             <p className="artist-name">Stefanie Smith</p>
@@ -117,7 +115,7 @@ function CalisseDeGoblet() {
           <img
             className="image-in-group"
             src={melLeandra}
-            alt="Three soda-fired ceramic goblets in shades of grey and peach"
+            alt={t("goblet.images.melLeandra")}
           />
           <div className="artist-info">
             <p className="artist-name"> Leandra Brandson x Melanie Barnett </p>
@@ -133,7 +131,7 @@ function CalisseDeGoblet() {
           <img
             className="image-in-group"
             src={teresa1}
-            alt="Ceramic goblet shaped like a girl riding a horse"
+            alt={t("goblet.images.teresa1")}
           />
           <div className="artist-info">
             <p className="artist-name">Teresa Bergen</p>
@@ -145,7 +143,7 @@ function CalisseDeGoblet() {
           <img
             className="image-in-group"
             src={teresa2}
-            alt="Ceramic goblet with two human legs at the base"
+            alt={t("goblet.images.teresa2")}
           />
           <div className="artist-info">
             <p className="artist-name">Teresa Bergen</p>
@@ -157,7 +155,7 @@ function CalisseDeGoblet() {
           <img
             className="image-in-group"
             src={jade}
-            alt="Cast aluminum goblet with spikes"
+            alt={t("goblet.images.jade")}
           />
           <div className="artist-info">
             <p className="artist-name">Jade Boutilier</p>
@@ -169,21 +167,21 @@ function CalisseDeGoblet() {
           <img
             className="image-in-group"
             src={ettyCan}
-            alt="Nerikomi sculpted goblet with sculpted aluminum can"
+            alt={t("goblet.images.ettyCan")}
           />
         </div>
         <div className="gallery-image-trio">
           <img
             className="image-in-group"
             src={ettyGrapes}
-            alt="Nerikomi sculpted goblet with sculpted grapes"
+            alt={t("goblet.images.ettyGrapes")}
           />
         </div>
         <div className="gallery-image-trio">
           <img
             className="image-in-group"
             src={ettyLemon}
-            alt="Nerikomi sculpted goblet with sculpted lemon"
+            alt={t("goblet.images.ettyLemon")}
           />
         </div>
         <div className="artist-info">
@@ -197,7 +195,7 @@ function CalisseDeGoblet() {
           <img
             className="image-in-group"
             src={claraMarie}
-            alt="Blobby black beeswax sculpted goblet & smooth iridescent white paper clay goblet with silver chains"
+            alt={t("goblet.images.claraMarie")}
           />
           <div className="artist-info-double">
             <div className="artist-info">

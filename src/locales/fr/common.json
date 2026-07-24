@@ -1,0 +1,17 @@
+{
+  "languageToggle": {
+    "groupLabel": "Choisir la langue",
+    "fr": "Français",
+    "en": "English"
+  },
+  "nav": {
+    "menuButtonLabel": "Menu de navigation",
+    "mainNavLabel": "Navigation principale",
+    "exhibitions": "expositions",
+    "contact": "contact",
+    "visit": "visite",
+    "shop": "boutique"
+  },
+  "homeLinkLabel": "Retourner à l'accueil",
+  "logoAlt": "Logo d'Entretemps"
+}

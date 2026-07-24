@@ -1,8 +1,12 @@
 import { useState, useRef } from "react";
+import { useTranslation } from "react-i18next";
+import { Link, useParams } from "react-router-dom";
 import "./Menu.css";
 import burger from "../assets/burger.svg";
 
 function Menu() {
+  const { t } = useTranslation("common");
+  const { lang } = useParams();
   const [isOpen, setIsOpen] = useState(false);
   const buttonRef = useRef(null);
 
@@ -28,7 +32,7 @@ function Menu() {
       <button
         ref={buttonRef}
         className="burger-border"
-        aria-label="Navigation menu"
+        aria-label={t("nav.menuButtonLabel")}
         aria-expanded={isOpen}
         aria-controls="main-nav-links"
         onClick={toggle}
@@ -38,17 +42,17 @@ function Menu() {
       <nav
         id="main-nav-links"
         className={`nav-menu-links${isOpen ? " nav-menu-links--open" : ""}`}
-        aria-label="Main navigation"
+        aria-label={t("nav.mainNavLabel")}
         aria-hidden={!isOpen}
       >
         <div
           className="nav-menu-links__container"
           inert={!isOpen ? "" : undefined}
         >
-          <a href="/exhibitions">expositions/exhibitions</a>
-          <a href="/contact">contact</a>
-          <a href="/visit">visit(e)</a>
-          <a href="http://wastedeffort.myshopify.com">shop</a>
+          <Link to={`/${lang}/exhibitions`}>{t("nav.exhibitions")}</Link>
+          <Link to={`/${lang}/contact`}>{t("nav.contact")}</Link>
+          <Link to={`/${lang}/visit`}>{t("nav.visit")}</Link>
+          <a href="http://wastedeffort.myshopify.com">{t("nav.shop")}</a>
         </div>
       </nav>
     </div>

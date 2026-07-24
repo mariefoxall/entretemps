@@ -1,0 +1,17 @@
+{
+  "booking": {
+    "triggerButton": "Book an appointment to visit our current exhibition",
+    "dialogTitle": "ENTRETEMPS - Book an appointment"
+  },
+  "secretForm": {
+    "descriptionLaunch": "At our launch party, we will share secrets.",
+    "descriptionInstructions": "Divulge a secret in the box below, and it will be added to our candy machine to be chosen at random for a stranger to hold onto.",
+    "label": "SECRETS*",
+    "placeholder": "Write your secret here!",
+    "submitButton": "Submit",
+    "successMessage": "now it's our little secret",
+    "errorMessage": "Something went wrong submitting your secret. Please try again.",
+    "maxLengthNote": "* Maximum 500 characters",
+    "moderationNote": "* No secrets deemed offensive or hateful will be accepted for this project. The selection will be at the discretion of the gallery."
+  }
+}

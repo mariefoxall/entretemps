@@ -1,0 +1,107 @@
+{
+  "listing": {
+    "currentHeading": "Current exhibition:",
+    "previousHeading": "Previous exhibitions:",
+    "clickPosterHint": "Click the poster for images from that show!"
+  },
+  "canicule": {
+    "posterAlt": "Poster for the group exhibition Canicule",
+    "description": "Our summer show is coming! Can you feel the heat? Join us to celebrate (or bemoan) the hottest weeks of the year, and submit your steamiest works of art.",
+    "applyPrompt": "Apply here:",
+    "applyButtonLabel": "Apply",
+    "applyUrl": "https://forms.gle/ukHUNavamB9f5BTr5"
+  },
+  "jardinSecret": {
+    "posterAlt": "Poster for the exhibition Jardin Secret",
+    "description": "A precious fortress of intimate feelings or thoughts that we want to keep exclusively for ourselves. Our hidden words, our intimate poetry, a place where we feel safe and held.",
+    "images": {
+      "groupShot": "Various works by artists in the Jardin Secret exhibition, installed on the walls and on plinths",
+      "caro": "Crocheted cocoon with colourful yarn spilling out, photos of experiential installation with a human wearing a similar cocoon",
+      "elpis": "Ceramic iris vase with beaded mobile and ceramic creatures hidden inside",
+      "daria1": "Glass terrarium with ceramic and cloth sculptures inside - condensation on the glass obscures the view of the sculptures inside",
+      "daria2": "Metal terrarium resting on a bed of soil, glass shards inside",
+      "MCMB": "Vases by Mao & Chris, beaded diary by Marie Foxall, ceramic stacked shards by Bridget Fairbank",
+      "JK": "Abstract painting on tiled ceramics by Jason Mitchell, grid of colourful polaroids by Karolanne Solis",
+      "gigi": "Three ceramic sculptures on a plinth, abstract gargoyle creatures",
+      "jade": "Sterling silver locket with bean inside and handmade chain with pearls",
+      "cereal": "Ceramic life-sized cereal boxes arranged as a fort"
+    }
+  },
+  "goblet": {
+    "posterAlt": "Poster for the group art show exhibition Calisse de Goblet",
+    "description": "No matter comment tu le dis, the goblet perseveres à travers le temps et l’espace: jamais left behind. Goths, kings and plebs, tous pognent le mighty chalice with reverence or normality, ritual or pomp. Verser ton potion, wine ou gatorade and behold Calisse de Goblet!",
+    "images": {
+      "groupShot": "Various works by artists in the Calisse de Goblet exhibition, installed on the walls and on plinths",
+      "mariaIda": "Blown glass goblet in primary colours by Maria Struk - Maria Ida Designs",
+      "kaleyFlowers": "Large ceramic goblet with digital imagery",
+      "SSmith1": "Large salt-fired blue and white ceramic goblet wings and talons",
+      "SSmith2": "Large peach and white ceramic goblet with wings and tentacles",
+      "melLeandra": "Three soda-fired ceramic goblets in shades of grey and peach",
+      "teresa1": "Ceramic goblet shaped like a girl riding a horse",
+      "teresa2": "Ceramic goblet with two human legs at the base",
+      "jade": "Cast aluminum goblet with spikes",
+      "ettyCan": "Nerikomi sculpted goblet with sculpted aluminum can",
+      "ettyGrapes": "Nerikomi sculpted goblet with sculpted grapes",
+      "ettyLemon": "Nerikomi sculpted goblet with sculpted lemon",
+      "claraMarie": "Blobby black beeswax sculpted goblet & smooth iridescent white paper clay goblet with silver chains"
+    }
+  },
+  "depanneur": {
+    "posterAlt": "Poster for the group art show exhibition Mon Dépanneur",
+    "description": "Group exhibition celebrating our shared and individual experiences surrounding this institution that brings us all together, the honourable dépanneur.",
+    "images": {
+      "groupShot": "Various works by artists in the Mon Depanneur exhibition, installed on the walls and on plinths",
+      "dontForget": "Sculpted post-it-notes by Kasia Sosnowski in Polymer clay",
+      "vieuxMontreal": "Those were the days by Fred Bouin & Jade Boutilier. Turned wood beer bottle in walnut, with cast label in white bronze, yellow bronze",
+      "depLaura": "Retro dep between my 3 1/2 and Rosemont by Tiphaine Lenaïk. Ink and acrylic on canvas",
+      "jarjar": "Salt-fired porcelain Thank You bag by Etty Anderson",
+      "pointDaide": "Asymmetrically framed photographs with blue and yellow mats by Katya Konioukhova",
+      "heritage": "Shakoor (héritage fruits et légumes) by Camille Zurini. Image transfer and acrylic on wood",
+      "vers": "Beaded gummy worms in a plastic bag by Marie Foxall"
+    }
+  },
+  "blueprints": {
+    "posterAlt": "Blueprints of Belonging photo exhibition poster",
+    "description": "Blueprints of Belonging is a photographic exhibition that traces a sensitive cartography of the gazes, gestures, and everyday fragments of trans and non-binary people. Created mainly using cyanotypes, the works evoke memory, imprint, and construction — like architectural plans of a belonging in perpetual negotiation. By deconstructing and recomposing faces, the exhibition becomes an act of resistance and reclamation. It builds a living archive where trans lives are not only visible, but rooted, affirmed, and inhabited.",
+    "images": {
+      "wideShot": "Various works by photographer Lawrence Fafard in the Blueprints of Belonging exhibition, installed on the walls and on plinths",
+      "portraitOverlay": "Overlay acetate photographic portrait in black/white/blue by Lawrence Fafard",
+      "portraitPlexiglass": "Overlay plexiglass photographic portrait in greyscale by Lawrence Fafard",
+      "cyanoTee": "cyanotype botanical t-shirt by Lawrence Fafard"
+    }
+  },
+  "princesseCowboy": {
+    "posterAlt": "Poster for the exhibition Princesse et Cowboy",
+    "images": {
+      "vitrine": "Overall photo of exhibition through the window",
+      "dechirure": "Textile & charcoal hanging work",
+      "chasseur": "mixed media found object sculpture",
+      "book": "Mixed media collaged & hand-illustrated coffee table book",
+      "chevet1": "Mixed media sculpture with shadow box and clay candle",
+      "table": "Mixed media sculpture made of wood, paint & found objects",
+      "repos": "Mixed media sculpture made of wood, clay & found objects"
+    }
+  },
+  "doggy": {
+    "posterAlt": "Poster for the exhibition YO DOGGY!",
+    "images": {
+      "overall": "Wide shot of art gallery with multicolored sculptures all over",
+      "dogAndKong": "Screenprint of dog and ceramic kong-shaped lamp",
+      "captive": "Bronze and suede ornate dog collar on a brass and wooden stand",
+      "woofWoofNight": "Ceramic double leash & collar in a gallery window at night",
+      "bestInShowTrophy": "Ceramic trophy with carved ceramic poodle figurine on top",
+      "bestInShowCups": "Ceramic goblets with carved poodle head base"
+    }
+  },
+  "purgatory": {
+    "posterAlt": "Poster for the exhibition Purgatory is a Waiting Room",
+    "images": {
+      "overall": "Wide shot of art gallery with multicolored sculptures all over",
+      "lamp": "Multicolored 6-foot tall paper mache lamp and palm tree",
+      "lampAndMaze": "Ceramic and lucite chainmail lamp hanging above lucite structure with ceramic and wood beads",
+      "cigarettes": "Silver ceramic lustre ashtray full of beaded cigarettes",
+      "ceramicCorner": "Tall ceramic lamp, pink ceramic table with rounded edges and a wacky multicolored vessel placed on top",
+      "chair": "Comically tall lime green & clear lucite chair with speckled ceramic bag and giant ceramic cigarette butt"
+    }
+  }
+}

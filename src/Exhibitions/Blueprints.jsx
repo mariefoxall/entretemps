@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import groupShot from "../assets/bpob/bpob-wide-shot.jpg";
 import TJ from "../assets/bpob/TJ.jpg";
 
@@ -9,70 +10,62 @@ import largeFramed from "../assets/bpob/framed.jpg";
 import "./Exhibitions.css";
 
 function BlueprintsOfBelonging() {
+  const { t } = useTranslation("exhibitions");
+
   return (
     <div className="exhibitions-page">
       <h3>BLUEPRINTS OF BELONGING</h3>
       <div className="exhibition-description">
-        <p>
-          Blueprints of Belonging est une exposition photographique qui trace
-          une cartographie sensible des regards, des gestes et des fragments de
-          quotidien de personnes trans et non binaires. Principalement réalisées
-          en cyanotypes, les œuvres évoquent la mémoire, l'empreinte et la
-          construction - comme des plans architecturaux d'une appartenance en
-          perpétuelle négociation. En déconstruisant et recomposant les visages,
-          l'exposition devient un acte de résistance et de réclama-tion. Elle
-          compose une archive vivante où les vies trans ne sont pas seulement
-          visibles. mais enracinées, affirmées et habitées.
-        </p>
+        <p>{t("blueprints.description")}</p>
       </div>
       <div className="exhibition-image-gallery">
         <div className="gallery-image">
           <img
             className="image-in-group"
             src={groupShot}
-            alt="Various works by photographer Lawrence Fafard in the Blueprints of Belonging exhibition, installed on the walls and on plinths"
+            alt={t("blueprints.images.wideShot")}
           />
         </div>
         <div className="gallery-image-vert">
           <img
             className="image-in-group"
             src={largeFramed}
-            alt="Various works by photographer Lawrence Fafard in the Blueprints of Belonging exhibition, installed on the walls and on plinths"
+            alt={t("blueprints.images.wideShot")}
           />
         </div>
         <div className="gallery-image-vert">
           <img
             className="image-in-group"
             src={TJ}
-            alt="Overlay acetate photographic portrait in black/white/blue by Lawrence Fafard"
+            alt={t("blueprints.images.portraitOverlay")}
           />
         </div>{" "}
         <div className="gallery-image">
           <img
             className="image-in-group"
             src={lyrael}
-            alt="Overlay plexiglass photographic portrait in greyscale by Lawrence Fafard"
+            alt={t("blueprints.images.portraitPlexiglass")}
           />
         </div>
         <div className="gallery-image-vert">
           <img
             className="image-in-group"
             src={andrea}
-            alt="Overlay acetate photographic portrait in black/white/blue by Lawrence Fafard"
+            alt={t("blueprints.images.portraitOverlay")}
           />
         </div>
         <div className="gallery-image-vert">
           <img
             className="image-in-group"
             src={satinee}
-            alt="Overlay acetate photographic portrait in black/white/blue by Lawrence Fafard"
+            alt={t("blueprints.images.portraitOverlay")}
           />
         </div>
         <div className="gallery-image">
           <img
             className="image-in-group"
             src={cyanoTee}
-            alt="cyanotype botanical t-shirt by Lawrence Fafard"
+            alt={t("blueprints.images.cyanoTee")}
           />
         </div>
       </div>

@@ -2,9 +2,11 @@ import * as React from "react";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
+import { useTranslation } from "react-i18next";
 import "./Booking.css";
 
 export default function BookingDialog() {
+  const { t } = useTranslation("forms");
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -18,9 +20,7 @@ export default function BookingDialog() {
   return (
     <React.Fragment className="booking">
       <button className="booking-button" onClick={handleClickOpen}>
-        Faites un RDV pour
-        <br /> visiter notre expo actuelle /<br /> Book an appointment to
-        <br></br> visit our current exhibition
+        {t("booking.triggerButton")}
       </button>
       <Dialog
         scroll="body"
@@ -33,7 +33,7 @@ export default function BookingDialog() {
         aria-describedby="booking-dialog-description"
       >
         <DialogTitle id="booking-dialog-title">
-          {"ENTRETEMPS - Book an appointment"}
+          {t("booking.dialogTitle")}
         </DialogTitle>
         <DialogContent className="booking-dialog-content">
           <iframe

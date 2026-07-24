@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import vitrine from "../assets/princesse-et-cowboy-vitrine.jpg";
 import dechirure from "../assets/dechirure.jpg";
 import chasseur from "../assets/chasseur-de-reve.jpg";
@@ -9,6 +10,8 @@ import cowboy from "../assets/cowboy.jpg";
 import table from "../assets/table-loup.jpg";
 
 function PrincesseEtCowboy() {
+  const { t } = useTranslation("exhibitions");
+
   return (
     <div className="exhibitions-page">
       <div className="exhibition-section">
@@ -17,48 +20,48 @@ function PrincesseEtCowboy() {
         <img
           className="gallery-image-vert"
           src={vitrine}
-          alt="Overall photo of exhibition through the window"
+          alt={t("princesseCowboy.images.vitrine")}
         />
         <img
           className="gallery-image-vert"
           src={dechirure}
-          alt="Textile & charcoal hanging work"
+          alt={t("princesseCowboy.images.dechirure")}
         />
         <img
           className="gallery-image"
           src={chasseur}
-          alt="mixed media found object sculpture"
+          alt={t("princesseCowboy.images.chasseur")}
         />
         <img
           className="gallery-image-vert"
           src={livreCowboy}
-          alt="Mixed media collaged & hand-illustrated coffee table book"
+          alt={t("princesseCowboy.images.book")}
         />
         <img
           className="gallery-image-vert"
           src={cowboy}
-          alt="Mixed media collaged & hand-illustrated coffee table book"
+          alt={t("princesseCowboy.images.book")}
         />
 
         <img
           className="gallery-image-vert"
           src={chevet1}
-          alt="Mixed media sculpture with shadow box and clay candle"
+          alt={t("princesseCowboy.images.chevet1")}
         />
         <img
           className="gallery-image-vert"
           src={table}
-          alt="Mixed media sculpture made of wood, paint & found objects"
+          alt={t("princesseCowboy.images.table")}
         />
         <img
           className="gallery-image-vert"
           src={repos}
-          alt="Mixed media sculpture made of wood, clay & found objects"
+          alt={t("princesseCowboy.images.repos")}
         />
         <img
           className="gallery-image-vert"
           src={repos2}
-          alt="Mixed media sculpture made of wood, clay & found objects"
+          alt={t("princesseCowboy.images.repos")}
         />
       </div>
     </div>

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import dogAndKong from "../assets/dog-kong.jpg";
 import captive from "../assets/captive-collar-stand.jpg";
 import overallYoDoggy from "../assets/yo-doggy-right-side.jpg";
@@ -7,38 +8,40 @@ import woofWoofNight from "../assets/woof-woof-night.jpg";
 import "./Exhibitions.css";
 
 function YoDoggy() {
+  const { t } = useTranslation("exhibitions");
+
   return (
     <div className="exhibitions-page">
       <h3>YO DOGGY!</h3>
       <img
         className="gallery-image"
         src={overallYoDoggy}
-        alt="Wide shot of art gallery with multicolored sculptures all over"
+        alt={t("doggy.images.overall")}
       />
       <img
         className="gallery-image-vert"
         src={dogAndKong}
-        alt="Screenprint of dog and ceramic kong-shaped lamp"
+        alt={t("doggy.images.dogAndKong")}
       />
       <img
         className="gallery-image-vert"
         src={captive}
-        alt="Bronze and suede ornate dog collar on a brass and wooden stand"
+        alt={t("doggy.images.captive")}
       />
       <img
         className="gallery-image"
         src={woofWoofNight}
-        alt="Ceramic double leash & collar in a gallery window at night"
+        alt={t("doggy.images.woofWoofNight")}
       />
       <img
         className="gallery-image-vert"
         src={bestInShowTrophy}
-        alt="Ceramic trophy with carved ceramic poodle figurine on top"
+        alt={t("doggy.images.bestInShowTrophy")}
       />
       <img
         className="gallery-image-vert"
         src={bestInShowCups}
-        alt="Ceramic goblets with carved poodle head base"
+        alt={t("doggy.images.bestInShowCups")}
       />
     </div>
   );
