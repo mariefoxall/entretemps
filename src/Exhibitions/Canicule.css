@@ -1,6 +1,7 @@
 .exhibition-essay {
   background-color: #ffefa7;
   padding: 1.5rem 2rem;
+  color: black;
 }
 
 @media (min-width: 1200px) {
