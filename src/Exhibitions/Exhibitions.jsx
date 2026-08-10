@@ -10,6 +10,7 @@ import call from "../assets/jardin-secret/jardin-secret-call-submissions.jpg";
 import appel from "../assets/jardin-secret/jardin-secret-appel-dossiers.jpg";
 import jsPoster from "../assets/JS-poster.jpg";
 import canicule from "../assets/canicule/canicule-heat-wave-poster.jpg";
+import calissePoster2 from "../assets/calisse2/calisse-de-goblet-2-poster.jpg";
 import "./Exhibitions.css";
 
 function Exhibitions() {
@@ -18,42 +19,43 @@ function Exhibitions() {
 
   return (
     <div className="exhibitions-page">
-      <div className="current">
+      {/* <div className="current">
         <h2>{t("listing.currentHeading")}</h2>
-        <div className="exhibition-section">
-          <div className="exhibition-header">
-            {/* <h3>CANICULE</h3>{" "} */}
-          </div>
-          <Link to={`/${lang}/exhibitions/canicule`}>
-            <img
-              className="poster-image"
-              src={canicule}
-              alt={t("canicule.posterAlt")}
-            />
-          </Link>
-        </div>
-      </div>
-      {/* <div className="upcoming">
+       
+      </div> */}
+      <div className="upcoming">
         <h2>
           Expositions à venir / <br />
           Upcoming Exhibitions:
         </h2>
         <div className="open-call">
           <div className="exhibition-section">
-            <Link to="/exhibitions/canicule">
+            <Link to="/exhibitions/calisse-de-goblet-2">
               <img
                 className="poster-image"
-                src={canicule}
-                alt="Poster for the open call for submissions for the exhibition Canicule"
+                src={calissePoster2}
+                alt="Poster for the open call for submissions for the exhibition Calisse de Goblet"
               />
             </Link>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="previous">
         <h2>{t("listing.previousHeading")}</h2>
         <p>{t("listing.clickPosterHint")}</p>
         <div className="previous-posters">
+          <div className="exhibition-section">
+            <div className="exhibition-header">
+              {/* <h3>CANICULE</h3>{" "} */}
+            </div>
+            <Link to={`/${lang}/exhibitions/canicule`}>
+              <img
+                className="poster-image"
+                src={canicule}
+                alt={t("canicule.posterAlt")}
+              />
+            </Link>
+          </div>
           <div className="exhibition-section">
             <Link to={`/${lang}/exhibitions/jardin-secret`}>
               <img
