@@ -24,11 +24,13 @@ function Exhibitions() {
           <div className="exhibition-header">
             {/* <h3>CANICULE</h3>{" "} */}
           </div>
-          <img
-            className="poster-image"
-            src={canicule}
-            alt={t("canicule.posterAlt")}
-          />
+          <Link to={`/${lang}/exhibitions/canicule`}>
+            <img
+              className="poster-image"
+              src={canicule}
+              alt={t("canicule.posterAlt")}
+            />
+          </Link>
         </div>
       </div>
       {/* <div className="upcoming">
