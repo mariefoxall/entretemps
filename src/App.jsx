@@ -28,7 +28,7 @@ import BlueprintsOfBelonging from "./Exhibitions/Blueprints";
 import JardinSecret from "./Exhibitions/JardinSecret";
 import Canicule from "./Exhibitions/Canicule";
 import i18n, { SUPPORTED_LANGUAGES, FALLBACK_LANGUAGE } from "./i18n/i18n";
-import { stripLangPrefix } from "./i18n/paths";
+import { stripLangPrefix, stripKnownLangPrefix } from "./i18n/paths";
 
 // Single source of truth for every page's relative path + element, reused for
 // both the /:lang/* tree and the legacy bare-path redirects below — so each
@@ -88,8 +88,10 @@ function LanguageLayout() {
 
 function LegacyPathRedirect() {
   const location = useLocation();
-  const pathname = location.pathname === "/" ? "" : location.pathname;
-  return <Navigate to={`/${getResolvedLanguage()}${pathname}`} replace />;
+  const rest = stripKnownLangPrefix(location.pathname);
+  return (
+    <Navigate to={`/${getResolvedLanguage()}${rest ? `/${rest}` : ""}`} replace />
+  );
 }
 
 function App() {
