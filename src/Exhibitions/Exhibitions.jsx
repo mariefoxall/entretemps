@@ -30,7 +30,7 @@ function Exhibitions() {
         </h2>
         <div className="open-call">
           <div className="exhibition-section">
-            <Link to="/exhibitions/goblet-2">
+            <Link to="/exhibitions/calisse-de-goblet-2">
               <img
                 className="poster-image"
                 src={calissePoster2}
