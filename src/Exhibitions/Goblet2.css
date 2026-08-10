@@ -1,0 +1,66 @@
+.exhibition-description {
+  background-color: #ffefa7;
+  padding: 1.5rem 2rem;
+  display: flex;
+}
+
+.exhibition-text {
+  margin: 2rem;
+  max-width: 800px;
+  text-align: center;
+}
+
+.goblet-logo-spin {
+  opacity: 0.8;
+  margin: 2rem;
+  height: 30vh;
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.apply-button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: rgb(204, 204, 255);
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submission-section {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .exhibition-description {
+    flex-direction: column;
+    align-items: center;
+  }
+  .submission-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .apply-button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .exhibition-description {
+    margin: 4rem;
+  }
+}
