@@ -50,7 +50,7 @@ const contentRoutes = [
   { path: "exhibitions/princesse-et-cowboy", element: <PrincesseEtCowboy /> },
   { path: "contact", element: <Contact /> },
   { path: "visit", element: <Visit /> },
-  { path: "exhibitions/calisse-de-goblet-2", element: <Goblet2 /> },
+  { path: "exhibitions/goblet-2", element: <Goblet2 /> },
   // { path: "shop", element: <Shop /> },
 ];
 
