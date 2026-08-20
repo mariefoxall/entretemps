@@ -18,7 +18,7 @@ function Home() {
   return (
     <>
       <div className="home-section">
-        <Link to={`/${lang}/exhibitions`} aria-label={t("heroLinkLabel")}>
+        <Link to={`/${lang}/about`} aria-label={t("heroLinkLabel")}>
           <h1 className="home-heading" ref={animated} aria-hidden="true"></h1>
         </Link>{" "}
         <p className="studio-gallery">{t("tagline")}</p>

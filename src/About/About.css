@@ -7,10 +7,8 @@
   margin-bottom: 20px;
 }
 
-.about-image-placeholder {
+.about-image {
   width: 100%;
   max-width: 800px;
-  aspect-ratio: 4 / 3;
-  background-color: rgb(244, 149, 133);
   margin: 20px 0;
 }
