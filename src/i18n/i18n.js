@@ -14,6 +14,8 @@ import enVisit from "../locales/en/visit.json";
 import frVisit from "../locales/fr/visit.json";
 import enForms from "../locales/en/forms.json";
 import frForms from "../locales/fr/forms.json";
+import enAbout from "../locales/en/about.json";
+import frAbout from "../locales/fr/about.json";
 
 export const SUPPORTED_LANGUAGES = ["fr", "en"];
 export const FALLBACK_LANGUAGE = "fr";
@@ -25,7 +27,7 @@ i18n
     fallbackLng: FALLBACK_LANGUAGE,
     supportedLngs: SUPPORTED_LANGUAGES,
     load: "languageOnly",
-    ns: ["common", "home", "exhibitions", "contact", "visit", "forms"],
+    ns: ["common", "home", "exhibitions", "contact", "visit", "forms", "about"],
     defaultNS: "common",
     resources: {
       en: {
@@ -35,6 +37,7 @@ i18n
         contact: enContact,
         visit: enVisit,
         forms: enForms,
+        about: enAbout,
       },
       fr: {
         common: frCommon,
@@ -43,6 +46,7 @@ i18n
         contact: frContact,
         visit: frVisit,
         forms: frForms,
+        about: frAbout,
       },
     },
     detection: {

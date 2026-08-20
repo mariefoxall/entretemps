@@ -50,6 +50,7 @@ function Menu() {
           inert={!isOpen ? "" : undefined}
         >
           <Link to={`/${lang}/exhibitions`}>{t("nav.exhibitions")}</Link>
+          <Link to={`/${lang}/about`}>{t("nav.about")}</Link>
           <Link to={`/${lang}/contact`}>{t("nav.contact")}</Link>
           <Link to={`/${lang}/visit`}>{t("nav.visit")}</Link>
           <a href="http://wastedeffort.myshopify.com">{t("nav.shop")}</a>

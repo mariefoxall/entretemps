@@ -9,6 +9,7 @@ import Contact from "./Contact/Contact";
 import Visit from "./Visit/Visit";
 // import Shop from "./Shop/Shop";
 import Home from "./Home/Home";
+import About from "./About/About";
 import {
   BrowserRouter as Router,
   Routes,
@@ -37,6 +38,7 @@ import { stripLangPrefix, stripKnownLangPrefix } from "./i18n/paths";
 const contentRoutes = [
   { path: "", element: <Home /> },
   { path: "exhibitions", element: <Exhibitions /> },
+  { path: "about", element: <About /> },
   { path: "exhibitions/purgatory-is-a-waiting-room", element: <Purgatory /> },
   { path: "exhibitions/yo-doggy", element: <YoDoggy /> },
   { path: "exhibitions/mon-depanneur", element: <MonDepanneur /> },
