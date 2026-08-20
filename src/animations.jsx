@@ -5,11 +5,11 @@ export function makeTextWavy(text, animatedElement) {
   animatedElement.innerHTML = text
     .split("")
     .map((letter) => {
-      return `<span>` + letter + `</span>`;
+      return letter === "\n" ? "<br />" : `<span>` + letter + `</span>`;
     })
     .join("");
 
-  Array.from(animatedElement.children).forEach((span, index) => {
+  Array.from(animatedElement.querySelectorAll("span")).forEach((span, index) => {
     setTimeout(() => {
       span.classList.add("wavy");
     }, index * 100 + delay);
