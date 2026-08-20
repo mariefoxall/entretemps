@@ -64,7 +64,8 @@ body {
 
 h1 {
   margin-bottom: 0.3rem;
-  font-size: clamp(2rem, min(30vw, calc((100vh - 200px) / 1.4)), 30rem);
+  padding: 40px 0;
+  font-size: clamp(2rem, min(30vw, calc((100vh - 280px) / 1.4)), 30rem);
   line-height: 0.7em;
   text-align: center;
   text-wrap: wrap;
@@ -94,7 +95,7 @@ button:focus-visible {
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: min(30vw, calc((100vh - 200px) / 1.4));
+    font-size: min(30vw, calc((100vh - 280px) / 1.4));
     line-height: 0.7;
   }
   h2 {
