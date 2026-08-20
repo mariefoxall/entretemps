@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import "./About.css";
 import galleryAtNight from "../assets/entretemps-gallery-front-night.jpg";
 
@@ -15,9 +15,13 @@ function About() {
         )}
         className="about-image"
       />
-      <p>{t("paragraph1")}</p>
+      <p>
+        <Trans t={t} i18nKey="paragraph1" components={{ strong: <strong /> }} />
+      </p>
       <p>{t("paragraph2")}</p>
-      <p>{t("paragraph3")}</p>
+      <p>
+        <Trans t={t} i18nKey="paragraph3" components={{ strong: <strong /> }} />
+      </p>
     </div>
   );
 }
